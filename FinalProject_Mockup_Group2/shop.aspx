@@ -7,6 +7,24 @@
     <title></title>
 
 <style>
+
+/*title*/
+.our-artisans {
+    width: 100%;
+    text-align: center;
+}
+
+.our-artisans h1 {
+    text-align: center;
+    font-size: 40px;
+    font-family: sans-serif;
+    color: #7B160E;
+    letter-spacing: 1.5px;
+    margin-top: 50px;
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
 /*hero banner*/
 .carousel {
 position: relative;
@@ -30,9 +48,10 @@ margin-bottom: 30px;
 .prev, .next{
     position:absolute;
     top:50%;
+    border-radius:15px;
     transform:translateY(-50%);
     font-size:30px;
-    background:rgba(0,0,0,0.5);
+    background:#BD8232;
     color:white;
     border:none;
     padding:10px 15px;
@@ -81,6 +100,7 @@ margin-bottom: 30px;
     padding-top: 10px;
     margin-bottom: 20px;
     box-shadow: 0 0 10px rgb(128, 128, 128);
+    background: #F1EBD3;
 
     transition: transform 0.35s ease, box-shadow 0.35s ease;
 }
@@ -106,9 +126,9 @@ margin-bottom: 30px;
 
 
 .btn-active-text{
-    background-color: var(--dimgrey) !important;
-    color: black !important;
-    border-color: black;
+    background-color: #7B160E !important;
+    color: white !important;
+    border-color: #7B160E;
     border-radius: 10px;
     padding: 15px 33px;
     font-size: 18px;
@@ -118,8 +138,8 @@ margin-bottom: 30px;
 }
 
 .btn-active-text:hover{
-    background-color: dimgrey!important;
-    color: var(--dimgrey) !important;
+    background-color: #4A0C07!important;
+    color: white !important;
     transition: transform 0.35s ease, box-shadow 0.35s ease;
 }
 
@@ -131,7 +151,9 @@ margin-bottom: 30px;
 <body>
     <form id="form1" runat="server">
          <section style=" background:#eee;">
-          <h1 class="auto-style1">The Craft</h1> 
+            <div class="our-artisans">
+            <h1>THE CRAFT</h1>
+            </div>
          <div class="carousel">
              <div class="slides">
                  <img class="slide" alt="pic" src="images/pic1.png" />
