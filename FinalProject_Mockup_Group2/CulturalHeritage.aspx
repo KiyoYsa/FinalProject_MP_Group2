@@ -1,12 +1,5 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="CulturalHeritage.aspx.cs" Inherits="FinalProject_Mockup_Group2.CulturalHeritage" %>
-
-<!DOCTYPE html>
-<html lang="en">
-<head runat="server">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cultural Heritage | Indigenous Artisan Collective</title>
-
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="CulturalHeritage.aspx.cs" Inherits="FinalProject_Mockup_Group2.CulturalHeritage" MasterPageFile="~/Site.Master" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
     <style>
         * {
             margin: 0px;
@@ -162,73 +155,53 @@
             margin-top: 40px;
         }
     </style>
-</head>
-<body>
-    <form id="form1" runat="server">
 
-        <header>
-            <div class="logo-text">Indigenous Artisan Collective</div>
-            <nav>
-                <a href="home.aspx">Home</a>
-                <a href="OurArtisans.aspx">Our Artisans</a>
-                <a href="shop.aspx">Shop + The Craft</a>
-                <a href="CulturalHeritage.aspx">Cultural Heritage</a>
-                <a href="Stories.aspx">Stories</a>
-            </nav>
-        </header>
 
-        <main>
-            <div class="page-header-section">
-                <h1>Cultural Heritage</h1>
-            </div>
+<main>
+<div class="page-header-section">
+    <h1>Cultural Heritage</h1>
+</div>
 
-            <section>
-                <p class="section-intro">
-                    For the T'boli and Ifugao people, weaving is a spiritual act. Every T’nalak cloth is a story woven from dreams, revealing the vocabulary of our ancestors.
-                </p>
+<section>
+    <p class="section-intro">
+        For the T'boli and Ifugao people, weaving is a spiritual act. Every T’nalak cloth is a story woven from dreams, revealing the vocabulary of our ancestors.
+    </p>
 
-                <div class="heritage-grid">
-                    <div class="heritage-card">
-                        <img src="images/pattern1.jpg" alt="Kafi Pattern" />
-                        <h3>The Frog (Kafi)</h3>
-                        <p>A symbol of fertility and harvest, honoring the spirits that bring life-giving rain.</p>
-                        <a href="#" class="btn-read">Read More</a>
-                    </div>
+    <div class="heritage-grid">
+        <div class="heritage-card">
+            <img src="images/pattern1.jpg" alt="Kafi Pattern" />
+            <h3>The Frog (Kafi)</h3>
+            <p>A symbol of fertility and harvest, honoring the spirits that bring life-giving rain.</p>
+            <a href="#" class="btn-read">Read More</a>
+        </div>
 
-                    <div class="heritage-card">
-                        <img src="images/pattern2.jpg" alt="Sigul Pattern" />
-                        <h3>The Snake (Sigul)</h3>
-                        <p>A protector motif representing the zigzag paths of the mountains and the spirits of the loom.</p>
-                        <a href="#" class="btn-read">Read More</a>
-                    </div>
+        <div class="heritage-card">
+            <img src="images/pattern2.jpg" alt="Sigul Pattern" />
+            <h3>The Snake (Sigul)</h3>
+            <p>A protector motif representing the zigzag paths of the mountains and the spirits of the loom.</p>
+            <a href="#" class="btn-read">Read More</a>
+        </div>
 
-                    <div class="heritage-card">
-                        <img src="images/pattern3.jpg" alt="Butterfly Pattern" />
-                        <h3>The Butterfly (Bangala)</h3>
-                        <p>Symbolizes transformation and the soul's journey through the ancestral physical world.</p>
-                        <a href="#" class="btn-read">Read More</a>
-                    </div>
-                </div>
-            </section>
+        <div class="heritage-card">
+            <img src="images/pattern3.jpg" alt="Butterfly Pattern" />
+            <h3>The Butterfly (Bangala)</h3>
+            <p>Symbolizes transformation and the soul's journey through the ancestral physical world.</p>
+            <a href="#" class="btn-read">Read More</a>
+        </div>
+    </div>
+</section>
 
-            <div class="process-section">
-                <h2>The Sacred Weaving Process</h2>
-                <p>The creation of heritage cloth follows a strict traditional ritual:</p>
-                <ol style="margin-left: 20px; margin-top: 15px;">
-                    <li><strong>Kedungon:</strong> Stripping and gathering abaca fibers.</li>
-                    <li><strong>Tembong:</strong> Tying threads to create the "resist" patterns.</li>
-                    <li><strong>Mebed:</strong> Dyeing with natural roots and leaves.</li>
-                    <li><strong>Mewel:</strong> Weaving on the traditional backstrap loom.</li>
-                </ol>
-            </div>
-        </main>
+<div class="process-section">
+    <h2>The Sacred Weaving Process</h2>
+    <p>The creation of heritage cloth follows a strict traditional ritual:</p>
+    <ol style="margin-left: 20px; margin-top: 15px;">
+        <li><strong>Kedungon:</strong> Stripping and gathering abaca fibers.</li>
+        <li><strong>Tembong:</strong> Tying threads to create the "resist" patterns.</li>
+        <li><strong>Mebed:</strong> Dyeing with natural roots and leaves.</li>
+        <li><strong>Mewel:</strong> Weaving on the traditional backstrap loom.</li>
+    </ol>
+</div>
+</main>
 
-        <footer>
-            <h3>Contact Us</h3>
-            <p>Email: artisans@email.com | Phone: +63 912 345 6789</p>
-            <p>© 2026 Indigenous Artisan Collective</p>
-        </footer>
 
-    </form>
-</body>
-</html>
+    </asp:Content>

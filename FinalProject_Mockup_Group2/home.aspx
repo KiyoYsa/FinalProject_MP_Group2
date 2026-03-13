@@ -1,14 +1,6 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="home.aspx.cs" Inherits="FinalProject_Mockup_Group2.home" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="home.aspx.cs" Inherits="FinalProject_Mockup_Group2.home" MasterPageFile="~/Site.Master" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
 
-<!DOCTYPE html>
-<html lang="en">
-
-<head runat="server">
-
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Indigenous Artisan Collective</title>
 
 <style>
 
@@ -148,29 +140,6 @@ margin:5px;
 
 </style>
 
-</head>
-
-<body>
-
-<form runat="server">
-
-<!-- nvigation -->
-
-<header>
-
-<div class="auto-style1"><strong>Indigenous Artisan Collective</strong></div>
-<!-- eedit na lang yung tamang connections -->
-<nav>
-<a href="Home.aspx">Home</a>
-<a href="artisans.aspx">Our Artisans</a>
-<a href="shop.aspx">Shop + The Craft</a>
-<a href="heritage.aspx">Cultural Heritage</a>
-<a href="stories.aspx">Stories</a>
-</nav>
-
-</header>
-
-
 <section class="hero">
 <!-- insert pic pa -->
 <img src="images/mainpic.jpg" alt="Indigenous Craft"> 
@@ -250,22 +219,4 @@ Every craft helps sustain artisan communities and preserve cultural heritage.
 </section>
 
 
-<!-- footee -->
-
-<footer>
-
-<h3>Contact Us</h3>
-
-<p>Email: artisans@email.com</p>
-<p>Phone: +63 912 345 6789</p>
-<p>Location: Philippines</p>
-
-<p>© 2026 Indigenous Artisan Collective</p>
-
-</footer>
-
-</form>
-
-</body>
-</html>
-
+</asp:Content>

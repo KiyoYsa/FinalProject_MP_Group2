@@ -1,12 +1,6 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="OurArtisans.aspx.cs" Inherits="FinalProject_Mockup_Group2.OurArtisans" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="OurArtisans.aspx.cs" Inherits="FinalProject_Mockup_Group2.OurArtisans" MasterPageFile="~/Site.Master"%>
 
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="utf-8" />
-    <title>Our Artisans</title>
-</head>
-<body>
+<asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
     <section>
         <div class="our-artisans">
             <h1>OUR ARTISANS</h1>
@@ -17,7 +11,7 @@
                     <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam efficitur iaculis auctor. Curabitur a enim malesuada, vehicula erat ac, consequat est.</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam efficitur iaculis auctor. Curabitur a enim malesuada, vehicula erat ac, consequat est. Nulla ullamcorper tellus arcu, vitae euismod orci varius ac.</p>
                     <div class="button">
-                        <a href="">Read More</a>
+                        <a>Read More</a>
                     </div>
                 </div>
                 <div class="image-section">
@@ -31,7 +25,7 @@
                     <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam efficitur iaculis auctor. Curabitur a enim malesuada, vehicula erat ac, consequat est.</p>
                     <div class="button">
-                        <a href="">Read More</a>
+                        <a>Read More</a>
                     </div>
                 </div>
                 <div class="image-section">
@@ -40,9 +34,8 @@
             </div>
         </div>
     </section>
-</body>
-</html>
 
+    
 <style>
     * {
         margin: 0px;
@@ -177,3 +170,5 @@
         }
     }
 </style>
+</asp:Content>
+    
