@@ -1,98 +1,182 @@
 ﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="FinalProject_Mockup_Group2.SiteMaster" %>
 
 <!DOCTYPE html>
-
 <html>
- <head runat="server">
-    <title>Weaving Community Website</title>
+<head runat="server">
+    <title><%: Page.Title %> - Indigenous Artisan Collective</title>
     
-     <style>
-         body{
-             font-family: Arial, Helvetica, sans-serif;
-         }
-         header{
-        display:flex;
-        justify-content:space-between;
-        align-items:center;
-        padding:20px 60px;
-        background:#FAF3CD;
-        border-bottom:1px solid #ddd;
-        position:sticky;
-        top:0;
+    <style>
+        /* Global Reset & Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            line-height: 1.5;
         }
 
-        .logo{
-        font-size:22px;
-        font-weight:bold;
-        color:#050505;
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: white;
+            color: #050505;
+            min-height: 100vh;
         }
 
-        nav a{
-        margin-left:25px;
-        text-decoration:none;
-        color:#333;
-        font-weight:500;
+        /* Layout Components */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 60px;
+            background: #FAF3CD;
+            border-bottom: 1px solid #ddd;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
         }
 
-        nav a:hover{
-        color:#a05a2c;
+        .logo-text {
+            font-size: 22px;
+            font-weight: bold;
+            color: #6b4f3b;
         }
 
-        footer{
-        background:#050505;
-        color:#FAF3CD;
-        text-align:center;
-        padding: 40px;
+        nav a {
+            margin-left: 25px;
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+            transition: 0.3s;
         }
 
-        footer p{
-        margin:5px;
+        nav a:hover {
+            color: #a05a2c;
         }
 
-            .auto-style1 {
-                font-size: 22px;
-                color: #6b4f3b;
-            }
+        /* Shared Page Elements */
+        .page-header-section {
+            background: #eee; 
+            width: 100%;
+            text-align: center;
+            padding: 40px 0;
+        }
 
+        .page-header-section h1 {
+            font-size: 40px;
+            color: #7B160E; 
+            letter-spacing: 1.5px;
+            display: inline-block;
+            text-transform: uppercase;
+        }
 
-     </style>
+        .page-header-section h1::after {
+            content: "";
+            display: block;
+            width: 120px;
+            height: 4px;
+            background: #7B160E;
+            margin: 10px auto;
+            border-radius: 2px;
+        }
+
+        section {
+            padding: 60px 80px;
+        }
+
+        /* Heritage & Grid Components */
+        .section-intro {
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto 40px auto;
+            font-size: 18px;
+        }
+
+        .heritage-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .heritage-card {
+            background: #F1EBD3; 
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            transition: transform 0.35s ease, box-shadow 0.35s ease;
+            text-align: center;
+        }
+
+        .heritage-card:hover {
+            transform: translateY(-15px);
+            box-shadow: 0 12px 20px rgba(0,0,0,0.2);
+        }
+
+        .heritage-card img {
+            width: 100%;
+            height: 245px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+
+        /* Buttons & Content Boxes */
+        .process-section {
+            background-color: #FAF3CD;
+            border-top: 6px solid #7B160E;
+            margin: 40px 80px;
+            padding: 40px;
+            border-radius: 6px;
+        }
+
+        .btn-read {
+            display: inline-block;
+            padding: 10px 20px;
+            background: #FFC917; 
+            color: black;
+            text-decoration: none;
+            border-radius: 4px;
+            font-weight: bold;
+            text-transform: uppercase;
+            margin-top: 15px;
+            transition: 0.3s;
+        }
+
+        .btn-read:hover {
+            background: #CD8417;
+            color: white;
+        }
+
+        footer {
+            background: #050505;
+            color: #FAF3CD;
+            text-align: center;
+            padding: 40px;
+            margin-top: 40px;
+        }
+    </style>
 </head>
-
 <body>
-
     <form id="form1" runat="server">
         <header>
             <div class="logo-text">Indigenous Artisan Collective</div>
-            <!-- eedit na lang yung tamang connections -->
             <nav>
-            <a href="Home.aspx">Home</a>
-            <a href="OurArtisans.aspx">Our Artisans</a>
-            <a href="shop.aspx">Shop + The Craft</a>
-            <a href="CulturalHeritage.aspx">Cultural Heritage</a>
-            <a href="Stories.aspx">Stories</a>
+                <a href="Home.aspx">Home</a>
+                <a href="OurArtisans.aspx">Our Artisans</a>
+                <a href="shop.aspx">Shop + The Craft</a>
+                <a href="CulturalHeritage.aspx">Cultural Heritage</a>
+                <a href="Stories.aspx">Stories</a>
             </nav>
         </header>
         
-        <div>
+        <asp:ContentPlaceHolder ID="MainContent" runat="server">
+        </asp:ContentPlaceHolder>
 
-            <asp:ContentPlaceHolder ID="MainContent" runat="server">
-            </asp:ContentPlaceHolder>
-
-        </div> 
-
-       <footer>
-
+        <footer>
             <h3>Contact Us</h3>
-
             <p>Email: artisans@email.com</p>
             <p>Phone: +63 912 345 6789</p>
             <p>Location: Philippines</p>
-
             <p>© 2026 Indigenous Artisan Collective</p>
-
         </footer>
-
-
     </form>
 </body>
 </html>
