@@ -4,6 +4,7 @@
 <html>
 <head runat="server">
     <title><%: Page.Title %> - T'boli Dreamweavers Archive</title>
+    <link href="StyleSheet.css" rel="stylesheet" type="text/css" /> 
     <style>
         /* T'BOLI CORE PALETTE: #1A1A1A (Black), #7B160E (Red), #FAF3CD (Ecru/Cream) */
         * {
