@@ -13,7 +13,7 @@
 
     <section class="home-about-section">
         <h2 class="home-section-title">About the Collective</h2>
-        <p style="font-size: 18px; color: #333; line-height: 1.8;">
+        <p style="font-size: 18px; color: #1A1A1A;">
             This archive highlights the T'boli artisan community and their sacred traditional crafts. 
             We aim to bridge the gap between ancient traditions and the modern world, 
             ensuring the "Dreamweaver" legacy continues for generations to come.
@@ -35,7 +35,7 @@
                 <img src="images/craft.jpg" alt="Craft">
                 <h3 style="font-size: 1.2rem;">Shop + The Craft</h3>
                 <p>Discover traditional T'nalak weaving.</p>
-                <div style="padding: 0 20px 20px;"><a href="shop.aspx" class="btn-read">Discover Shop</a></div>
+                <div style="padding: 0 20px 20px;"><a href="shop.aspx" class="btn-read">Discover Crafts</a></div>
             </div>
 
             <div class="heritage-card home-grid-card">
@@ -57,7 +57,7 @@
 
     <section class="home-about-section">
         <h2 class="home-section-title">Support T'boli Craftsmanship</h2>
-        <p style="margin-bottom: 25px;">Every craft helps sustain artisan communities and preserve cultural heritage.</p>
+        <p style="font-size: 18px; color: #1A1A1A; margin-bottom: 25px;">Every craft helps sustain artisan communities and preserve cultural heritage.</p>
     </section>
 
 </asp:Content>

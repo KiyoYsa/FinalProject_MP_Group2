@@ -146,7 +146,7 @@
             background: #1A1A1A;
             color: #FAF3CD;
             text-align: center;
-            padding: 60px;
+            padding: 60px 0px;
             margin-top: 80px;
         }
 
