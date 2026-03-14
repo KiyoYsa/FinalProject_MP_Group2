@@ -4,7 +4,7 @@
 <html>
 <head runat="server">
     <title><%: Page.Title %> - T'boli Dreamweavers Archive</title>
-    <link href="StyleSheet.css" rel="stylesheet" type="text/css" /> 
+    <link href="StyleSheet.css" rel="stylesheet" type="text/css" />
     <style>
         /* T'BOLI CORE PALETTE: #1A1A1A (Black), #7B160E (Red), #FAF3CD (Ecru/Cream) */
         * {
@@ -148,6 +148,49 @@
             text-align: center;
             padding: 60px;
             margin-top: 80px;
+        }
+
+        /* Home Hero Customization */
+        .home-hero-img {
+            width: 100%;
+            max-width: 1000px;
+            height: 500px;
+            object-fit: cover;
+            margin-bottom: 30px;            
+        }
+
+        /* Force 4-column row on Home Page */
+        .home-grid-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: nowrap; /* Keeps all cards on one line */
+        }
+
+        .home-grid-card {
+            flex: 1;
+            min-width: 200px;
+        }
+
+        /* Adjust image height for the narrower 4-column cards */
+        .home-grid-card img {
+            height: 250px !important;
+        }
+
+        /* Shared Home Sections */
+        .home-about-section {
+            padding: 80px 15%;
+            text-align: center;
+            background: #FDFCF8;
+        }
+
+        .home-section-title {
+            text-align: center;
+            color: #7B160E;
+            font-size: 32px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 30px;
         }
     </style>
 </head>

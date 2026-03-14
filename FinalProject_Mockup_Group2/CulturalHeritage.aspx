@@ -12,7 +12,7 @@
             <img src="images/fu-dalu-spirit.jpg" style="width: 100%; border: 1px solid #1A1A1A; padding: 10px;" alt="The Weaver's Loom" />
         </div>
         <div style="flex: 1; min-width: 300px;">
-            <h2 style="font-size: 36px; color: #7B160E; margin-bottom: 20px;">The Language of Dreams</h2>
+            <h2 style="font-size: 32px; color: #7B160E; margin-bottom: 20px;">The Language of Dreams</h2>
             <p style="font-size: 18px; color: #333; margin-bottom: 20px; line-height: 1.8;">
                 The T'boli women, known as <b>Dreamweavers</b>, do not use patterns or drawings. They weave from memory, 
                 interpreting sacred designs sent to them in dreams. This spiritual connection ensures that no two T'nalak 
@@ -26,7 +26,7 @@
     </section>
 
     <section>
-        <h2 style="text-align: center; letter-spacing: 4px; margin-bottom: 60px;">CORE PATTERN</h2>
+        <h2 style="font-size: 32px; color: #7B160E; text-align: center; letter-spacing: 4px; margin-bottom: 30px;">CORE PATTERN</h2>
         
         <div class="heritage-grid">
             <div class="heritage-card">
@@ -53,7 +53,7 @@
     </section>
 
     <section>
-        <h2 style="color: #7B160E; margin-bottom: 30px;">Textile Authentication Data</h2>
+        <h2 style="font-size: 32px; color: #7B160E; margin-bottom: 30px;">Textile Authentication Data</h2>
         <table style="width: 100%; border-collapse: collapse; text-align: left; background: white; border: 1px solid #1A1A1A;">
             <tr style="background: #1A1A1A; color: #FAF3CD;">
                 <th style="padding: 20px;">Property</th>
