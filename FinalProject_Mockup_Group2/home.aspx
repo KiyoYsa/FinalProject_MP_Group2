@@ -4,44 +4,15 @@
 
 <style>
 
-/*di pa nafafinalize yung color pallete*/
+/*di pa nafafinalize yung color pallete
 
 body{
 font-family: Arial, sans-serif;
 margin:0;
 background:white;
 color:#050505;
-}
+}*/
 
-/* header*/
-
-header{
-display:flex;
-justify-content:space-between;
-align-items:center;
-padding:20px 60px;
-background:#FAF3CD;
-border-bottom:1px solid #ddd;
-position:sticky;
-top:0;
-}
-
-.logo{
-font-size:22px;
-font-weight:bold;
-color:#050505;
-}
-
-nav a{
-margin-left:25px;
-text-decoration:none;
-color:#333;
-font-weight:500;
-}
-
-nav a:hover{
-color:#a05a2c;
-}
 
 .hero{
 text-align:center;
@@ -120,23 +91,7 @@ background:#CD8417;
 color:white;
 }
 
-/* fooyeer */
 
-footer{
-background:#050505;
-color:#FAF3CD;
-text-align:center;
-padding:40px;
-}
-
-footer p{
-margin:5px;
-}
-
-    .auto-style1 {
-        font-size: 22px;
-        color: #6b4f3b;
-    }
 
 </style>
 

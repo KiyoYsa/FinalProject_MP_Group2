@@ -44,12 +44,12 @@
         line-height: 1.5;
         font-family: Arial, sans-serif;
     }
-
+    /*
     body {
         width: 100%;
         min-height: 100vh;
         background-color: #ddd;
-    }
+    }*/
 
     .our-artisans {
         width: 100%;

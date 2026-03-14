@@ -96,12 +96,6 @@
 
 <style>
 
-body{
-    font-family: Arial, sans-serif;
-    margin:0;
-    background-color:white; 
-    color:black;
-}
 
 .container{
     width:80%;
