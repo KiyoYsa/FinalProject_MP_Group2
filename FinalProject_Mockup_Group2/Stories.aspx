@@ -16,14 +16,12 @@
 
         <img src="images/pic1.png" />
 
-        <h2>Lorem ipsum</h2>
+        <h3>Featured Story </h3>
 
         <p>
-        Lorem ipsum dolor sit amet consectetur adipiscing elit. 
-        Consectetur adipiscing elit quisque faucibus ex sapien vitae.
-        Ex sapien vitae pellentesque sem placerat in id.
-        Placerat in id cursus mi pretium tellus duis.
-        Pretium tellus duis convallis tempus leo eu aenean.
+        This space will contain a short description or summary of the blog post.
+        It will highlight the main idea of the story and encourage readers to 
+        continue reading the full article.
         </p>
 
         <a class="read">
@@ -42,11 +40,12 @@
         <div class="storiescard">
             <img src="images/pic1.png" />
 
-            <h3>Lorem Ipsum</h3>
+            <h3>Story / Blog 1</h3>
 
             <p>
-            Lorem ipsum dolor sit amet consectetur adipiscing elit.
-            Dolor sit amet consectetur adipiscing elit quisque faucibus.
+            This space will contain a short description or summary of the blog post.
+            It will highlight the main idea of the story and encourage readers to 
+            continue reading the full article.
             </p>
 
             <a class="read">
@@ -59,11 +58,12 @@
         <div class="storiescard">
             <img src="images/pic2.png" />
 
-            <h3>Lorem Ipsum</h3>
+            <h3>Story / Blog 2</h3>
 
             <p>
-                Lorem ipsum dolor sit amet consectetur adipiscing elit.
-                Dolor sit amet consectetur adipiscing elit quisque faucibus.
+            This space will contain a short description or summary of the blog post.
+            It will highlight the main idea of the story and encourage readers to 
+            continue reading the full article.
             </p>
 
             <a class="read">
@@ -76,11 +76,12 @@
         <div class="storiescard">
             <img src="images/pic3.png" />
 
-            <h3>Lorem Ipsum</h3>
+            <h3>Story / Blog 3</h3>
 
             <p>
-            Lorem ipsum dolor sit amet consectetur adipiscing elit.
-            Dolor sit amet consectetur adipiscing elit quisque faucibus.
+            This space will contain a short description or summary of the blog post.
+            It will highlight the main idea of the story and encourage readers to 
+            continue reading the full article.
             </p>
 
             <a class="read">
