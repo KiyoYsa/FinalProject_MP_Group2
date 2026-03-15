@@ -109,10 +109,11 @@ section {
 /*hero banner*/
 .carousel {
     position: relative;
-    width: 100%;
+    max-width: 1300px;
+    width: 90%;
     height: 550px;
     overflow: hidden;
-    margin-bottom: 30px;
+    margin: 30px auto 20px auto;
 }
 
 .slides {
@@ -141,11 +142,41 @@ section {
 
 .prev {
     left: 10px;
+    display: inline-block;
+    padding: 12px 30px;
+    background: #1A1A1A;
+    color: #FAF3CD;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 12px;
+    transition: 0.3s;
 }
+
+    .prev:hover {
+        background: #7B160E;
+    }
 
 .next {
     right: 10px;
+    display: inline-block;
+    padding: 12px 30px;
+    background: #1A1A1A;
+    color: #FAF3CD;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 12px;
+    transition: 0.3s;
 }
+
+    .next:hover {
+        background: #7B160E;
+    }
 
 .auto-style1 {
     text-align: center;
@@ -181,7 +212,7 @@ section {
             padding-top: 10px;
             margin-bottom: 20px;
             box-shadow: 0 0 10px rgb(128, 128, 128);
-            background: #F1EBD3;
+            background: #FAF3CD;
             transition: transform 0.35s ease, box-shadow 0.35s ease;
         }
 
@@ -206,22 +237,24 @@ section {
 
 
 .btn-active-text {
-    background: #FFC917 !important;
-    color: #050505 !important;
-    border-color: #FFC917;
-    border-radius: 5px;
-    padding: 10px 25px;
-    font-size: 18px;
+    display: inline-block; /* needed for transform to work properly */
+    padding: 12px 30px;
+    background: #1A1A1A;
+    color: #FAF3CD;
+    border: none; /* remove default button border */
+    border-radius: 4px;
     font-weight: bold;
-    letter-spacing: 1px;
     text-transform: uppercase;
-    transition: 0.3s ease, transform 0.3s ease;
+    letter-spacing: 1px;
+    font-size: 12px;
+    cursor: pointer; /* shows pointer on hover */
+    outline: none;
+    transition: background 0.3s ease, transform 0.1s ease;
 }
 
-    .btn-active-text:hover {
-        background: #CD8417 !important;
-        color: white !important;
-        transition: transform 0.35s ease, box-shadow 0.35s ease;
+    .btn-active-text:hover,
+    .btn-active-text:active {
+        background-color: #7B160E;
     }
 
 
