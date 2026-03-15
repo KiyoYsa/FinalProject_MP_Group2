@@ -13,7 +13,7 @@
         </div>
         <div style="flex: 1; min-width: 300px;">
             <h2 style="font-size: 32px; color: #7B160E; margin-bottom: 20px;">The Language of Dreams</h2>
-            <p style="font-size: 18px; color: #333; margin-bottom: 20px; line-height: 1.8;">
+            <p style="font-size: 18px; color: #1A1A1A; margin-bottom: 20px; line-height: 1.8;">
                 The T'boli women, known as <b>Dreamweavers</b>, do not use patterns or drawings. They weave from memory, 
                 interpreting sacred designs sent to them in dreams. This spiritual connection ensures that no two T'nalak 
                 pieces are ever identical.
@@ -80,23 +80,23 @@
 
     <section style="background: #FAF3CD; color: #7B160E; margin: 80px; padding: 80px; border-radius: 6px;">
         <h2 style="color: #7B160E; font-size: 32px; margin-bottom: 20px;">The Lifecycle of T'nalak</h2>
-        <p style="margin-bottom: 30px;">The creation process can take 3 to 6 months. It is a slow, meditative ritual.</p>
+        <p style="font-size: 18px; color: #1A1A1A; margin-bottom: 20px;">The creation process can take 3 to 6 months. It is a slow, meditative ritual.</p>
         <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 30px;">
             <div>
-                <h4 style="color: #7B160E;">1. Kedungon</h4>
-                <p style="font-size: 14px;">The meticulous stripping of abaca stalks to find the finest fibers.</p>
+                <h4 style="color: #1A1A1A;">1. Kedungon</h4>
+                <p style="font-size: 18px; color: #1A1A1A; margin-bottom: 20px;">The meticulous stripping of abaca stalks to find the finest fibers.</p>
             </div>
             <div>
-                <h4 style="color: #7B160E;">2. Tembong</h4>
-                <p style="font-size: 14px;">The "Dream Tying" where threads are knotted to block the dye.</p>
+                <h4 style="color: #1A1A1A;">2. Tembong</h4>
+                <p style="font-size: 18px; color: #1A1A1A; margin-bottom: 20px;">The "Dream Tying" where threads are knotted to block the dye.</p>
             </div>
             <div>
-                <h4 style="color: #7B160E;">3. Mebed</h4>
-                <p style="font-size: 14px;">Boiling the fibers in natural vats for weeks to reach true colors.</p>
+                <h4 style="color: #1A1A1A;">3. Mebed</h4>
+                <p style="font-size: 18px; color: #1A1A1A; margin-bottom: 20px;">Boiling the fibers in natural vats for weeks to reach true colors.</p>
             </div>
             <div>
-                <h4 style="color: #7B160E;">4. Mewel</h4>
-                <p style="font-size: 14px;">Weaving on a backstrap loom using the weaver's body as tension.</p>
+                <h4 style="color: #1A1A1A;">4. Mewel</h4>
+                <p style="font-size: 18px; color: #1A1A1A; margin-bottom: 20px;">Weaving on a backstrap loom using the weaver's body as tension.</p>
             </div>
         </div>
     </section>
