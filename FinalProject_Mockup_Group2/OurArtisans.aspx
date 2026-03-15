@@ -5,23 +5,21 @@
     
     <section>
         <div class="our-artisans">
-            <h1>OUR ARTISANS</h1>
+            <div class="artisan-banner">
+                <h1>OUR ARTISANS</h1>
 
-             <div class="artisan-page-description"> 
-                <p>
-                    <br> 
-                    The Our Artisans page introduces the skilled individuals behind the products and services featured in this website.  
-                    Its purpose is to highlight the artisans, their craftsmanship, and their contribution to preserving traditional skills  
-                    and cultural heritage. By showcasing their work and stories, the page allows visitors to learn more about the people  
-                    responsible for creating the products presented in the platform. 
+                 <p class="artisan-page-description"> 
+                        The Our Artisans page introduces the talented T’boli artisans behind the products featured on this website. It highlights their craftsmanship, cultural traditions, and their role in preserving the heritage of the T’boli community. Through their stories and traditional practices, visitors can learn more about the people and cultural values behind each handcrafted piece. 
                 </p>
-            </div> 
+            </div>
+
+            <div class="artisan-divider"></div>
 
             <!-- First artisan -->
             <div class="artisan-wrapper">
                 <div class="artisan-content">
                     <h3>Artisan 1 Name (Province)</h3>
-                    <p>Contains artisan's description, background, culture and the likes. Read more would take them to their heritage.</p>
+                    <p>This section presents each artisan’s background, craft, and cultural heritage. It provides an overview of their skills, traditions, and the stories behind their work. By clicking Read More, visitors can explore deeper insights into the artisan’s heritage and the cultural significance of their craft.</p>
                     <div class="artisan-button">
                         <a href="CulturalHeritage.aspx">Read More</a>
                     </div>
@@ -35,7 +33,7 @@
             <div class="artisan-wrapper reverse">
                 <div class="artisan-content">
                     <h3>Artisan 2 Name (Province)</h3>
-                    <p>Contains artisan's description, background, culture and the likes. Read more would take them to their heritage.</p>
+                    <p>This section presents each artisan’s background, craft, and cultural heritage. It provides an overview of their skills, traditions, and the stories behind their work. By clicking Read More, visitors can explore deeper insights into the artisan’s heritage and the cultural significance of their craft.</p>
                     <div class="artisan-button">
                         <a href="CulturalHeritage.aspx">Read More</a>
                     </div>
@@ -46,7 +44,7 @@
             </div>
         </div>
     </section>
-
+    </div>
 
 </asp:Content>
     
