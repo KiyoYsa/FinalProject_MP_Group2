@@ -4,157 +4,8 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title>Login</title>
-    <style>
-    .login-page body, html {
-        margin: 0;
-        padding: 0;
-        height: 100%;
-        font-family: Garamond, sans-serif;
-    }
-
-    .login-page {
-        display: flex;
-        height: 100vh;
-        width: 100vw;
-        background: #FDF6E3;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .login-container {
-        display: flex;
-        width: 900px;
-        max-width: 95%;
-        height: 400px;
-        background: white;
-        border-radius: 16px;
-        overflow: hidden;
-        box-shadow: 0 12px 30px rgba(0,0,0,0.15);
-    }
-
-    .login-image {
-        flex: 1;
-        background-image: url('https://fameplus.com/uploads/userfiles/AC_Tiboli%20Weavers%20Img4.jpg');
-        background-size: cover;
-        background-position: center;
-        position: relative;
-    }
-
-    .login-image::after {
-        content: "";
-        position: absolute;
-        inset: 0;
-        background: linear-gradient(rgba(122,28,28,0.6), rgba(62,39,35,0.7));
-    }
-
-    .login-image-text {
-        position: absolute;
-        z-index: 2;
-        color: #D4AF37;
-        font-weight: bold;
-        bottom: 20px;
-        left: 20px;
-        font-size: 20px;
-    }
-
-    .login-form {
-        flex: 1;
-        padding: 40px 40px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-
-    .login-title {
-        text-align: center;
-        font-size: 24px;
-        font-weight: bold;
-        color: #7B160E;
-        margin-bottom: 30px;
-    }
-
-    .input-group {
-        position: relative;
-        margin-bottom: 20px;
-        width: 100%;
-    }
-
-    .input-group svg {
-        position: absolute;
-        top: 50%;
-        left: 12px;
-        transform: translateY(-50%);
-        fill: #7A1C1C;
-        width: 20px;
-        height: 20px;
-    }
-
-    .login-input {
-        width: 100%;
-        padding: 12px 42px 12px 42px;
-        border-radius: 8px;
-        border: 1px solid #ccc;
-        font-size: 16px;
-        transition: 0.3s;
-        box-sizing: border-box;
-    }
-
-    .login-input:focus {
-        border-color: #7B160E;
-        outline: none;
-        box-shadow: 0 0 0 2px rgba(122,28,28,0.2);
-    }
-
-    .toggle-password {
-        position: absolute;
-        top: 50%;
-        right: 12px;
-        transform: translateY(-50%);
-        cursor: pointer;
-        width: 20px;
-        height: 20px;
-        z-index: 3;
-    }
-
-    .login-btn {
-        width: 100%;
-        padding: 12px;
-        background: #7A1C1C;
-        color: white;
-        border: none;
-        border-radius: 8px;
-        font-weight: bold;
-        cursor: pointer;
-        transition: 0.3s;
-        margin-top: 10px;
-    }
-
-    .login-btn:hover {
-        background: #5c1515;
-    }
-
-    .login-error {
-        color: #b00020; 
-        background: #fdecea;
-        padding: 10px;
-        border-radius: 6px;
-        margin-bottom: 15px;
-        font-size: 14px;
-        display: block;
-    }
-
-    @media (max-width: 768px) {
-        .login-container {
-            flex-direction: column;
-            height: auto;
-        }
-        .login-image {
-            height: 200px;
-        }
-    }
-</style>
-
-
+    <link rel="stylesheet" type="text/css" href="css/StyleSheet.css" />
+    
     <script>
         function togglePassword() {
             var pass = document.getElementById('<%= pass_input.ClientID %>');
@@ -180,12 +31,12 @@
 
             <div class="login-image">
                 <div class="login-image-text">
-                    Dreamweaver Collective
+                    Dreamweavers Collective
                 </div>
             </div>
 
             <div class="login-form">
-                <div class="login-title">Welcome back</div>
+                <div class="login-title">Welcome!</div>
 
                 <div class="input-group">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
