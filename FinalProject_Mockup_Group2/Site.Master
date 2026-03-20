@@ -12,13 +12,21 @@
     <form id="form1" runat="server">
         <header>
             <div class="logo-text" style="font-family: 'Garamond', 'Georgia', sans-serif;">T'boli Dreamweavers Collective</div>
-            <nav>
+            
+            
+            <div class="side-panel" id="sidePanel">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">x</a>
                 <a href="Home.aspx">Home</a>
                 <a href="OurArtisans.aspx">Our Artisans</a>
                 <a href="shop.aspx">Crafts</a>
                 <a href="CulturalHeritage.aspx">Cultural Heritage</a>
                 <a href="Stories.aspx">Stories</a>
-            </nav>
+            </div>
+
+            <div id="main">
+                <a href="UserLogin.aspx">DreamWeaver Portal</a>
+            <button type="button" class="openbtn" onclick="openNav()">☰</button>
+                </div>
         </header>
 
         <asp:ContentPlaceHolder ID="MainContent" runat="server">
@@ -30,6 +38,18 @@
             <p>Lake Sebu, South Cotabato, Philippines</p>
             <p>© 2026 T'boli Dreamweavers Collective</p>
         </footer>
+
+          <script>
+              function openNav() {
+                  document.getElementById("sidePanel").style.width = "250px";
+
+              }
+
+              function closeNav() {
+                  document.getElementById("sidePanel").style.width = "0px";
+              }
+</script>
+
     </form>
 </body>
 </html>

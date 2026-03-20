@@ -15,16 +15,6 @@ body {
 }
 
 /* MUSEUM NAVIGATION */
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 30px 80px;
-    background: #1A1A1A; /* Black background for high-end feel */
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-}
 
 .logo-text {
     font-size: 20px;
@@ -33,20 +23,88 @@ header {
     letter-spacing: 3px;
     text-transform: uppercase;
 }
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 80px;
+    background: #1A1A1A; /* Black background for high-end feel */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+    header a {
+        right: 20px;
+        text-decoration: none;
+        font-size: 15px;
+        color: #FAF3CD;
+        display: block;
+        text-transform: uppercase;
+        transition: 0.3s;
+    }
 
-nav a {
-    margin-left: 30px;
-    text-decoration: none;
-    color: #FAF3CD;
-    font-size: 14px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
+        header a:hover {
+            color: #BD8232;
+        }
+
+
+.side-panel {
+
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: auto;
+    background-color: #1A1A1A;
+    overflow-x: hidden;
     transition: 0.3s;
+    padding-top: 60px;
+}
+    .side-panel a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 15px;
+        color: #FAF3CD;
+        display: block;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        transition: 0.3s;
+    }
+
+        .side-panel a:hover {
+            color: #BD8232;
+        }
+
+.side-panel .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
 }
 
-    nav a:hover {
-        color: #BD8232; /* Gold accent */
+.openbtn {
+    right: 20px;
+    font-size: 25px;
+    cursor: pointer;
+    color: #FAF3CD;
+    background: #1A1A1A;
+    border: none;
+}
+
+    .openbtn:hover {
+        color: #FAF3CD;
     }
+
+#main {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    transition: margin-left .5s;
+    padding: 16px;
+}
+
 
 /* SHARED PAGE HEADER */
 .page-header-section, .story-sec-header, .artisan-banner {
@@ -100,8 +158,9 @@ footer {
     background: #1A1A1A;
     color: #FAF3CD;
     text-align: center;
-    padding: 60px 0px;
+    padding: 50px 0px;
     margin-top: 80px;
+    margin-bottom:0px;
 }
 
 /*CURLTURAL HERITAGE AND HOME CARD STYLE*/
