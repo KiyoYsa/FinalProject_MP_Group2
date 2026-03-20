@@ -26,7 +26,7 @@
     </section>
 
     <section>
-        <h2 style="font-size: 32px; color: #7B160E; text-align: center; letter-spacing: 4px; margin-bottom: 30px;">CORE PATTERN</h2>
+        <h2 class="section-title">CORE PATTERN</h2>
         
         <div class="heritage-grid">
             <div class="heritage-card">

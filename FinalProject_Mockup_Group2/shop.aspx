@@ -1,13 +1,12 @@
 ﻿<%@ Page Title="Crafts + Shop" Language="C#" AutoEventWireup="true" CodeBehind="shop.aspx.cs" Inherits="FinalProject_Mockup_Group2.shop" MasterPageFile="~/Site.Master"%>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
 
-    <section class="page-header-section">
-        <h1 style="font-family: 'Garamond', 'Georgia', sans-serif;">THE CRAFT</h1>
-        <p>
-            The Craft page features an image carousel that highlights the weaving process through a series of photos, giving visitors a glimpse of how the products are made. It also includes a product grid that showcases the woven items available for sale, making it easy for users to browse the handcrafted products offered on the site.
+    <div class="page-header-section">
+        <h1 >THE CRAFT</h1>
+        <p> The Craft page features an image carousel that highlights the weaving process through a series of photos, giving visitors a glimpse of how the products are made. It also includes a product grid that showcases the woven items available for sale, making it easy for users to browse the handcrafted products offered on the site.
         </p>
         
-    </section>
+    </div>
 
     <div class="carousel">
         <div class="slides">
@@ -30,10 +29,10 @@
     </section>
             
     <div class="auto-style1" style="gap:25px;">
-        <button type="button" class="btn-active-text">All</button>
-        <button type="button" class="btn-active-text">Clothing</button>
-        <button type="button" class="btn-active-text">Blankets/Shawls</button>
-        <button type="button" class="btn-active-text">Accesories</button>
+        <button type="button" class="btn-read">All</button>
+        <button type="button" class="btn-read">Clothing</button>
+        <button type="button" class="btn-read">Blankets/Shawls</button>
+        <button type="button" class="btn-read">Accesories</button>
     </div>
         
         
@@ -245,7 +244,7 @@
         showSlide();
         }
 
-    const buttons = document.querySelectorAll('.btn-active-text');
+        const buttons = document.querySelectorAll('.btn-read');
 
     buttons.forEach(button => {
         button.addEventListener('click', () => {

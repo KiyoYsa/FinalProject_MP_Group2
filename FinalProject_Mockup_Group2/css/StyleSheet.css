@@ -1,6 +1,194 @@
-﻿/*HOME STYLESHEET*/
+﻿
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 1.6;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    background-color: #FDFCF8;
+    color: #1A1A1A;
+    min-height: 100vh;
+}
+
+/* MUSEUM NAVIGATION */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 80px;
+    background: #1A1A1A; /* Black background for high-end feel */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo-text {
+    font-size: 20px;
+    font-weight: bold;
+    color: #FAF3CD;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+nav a {
+    margin-left: 30px;
+    text-decoration: none;
+    color: #FAF3CD;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: 0.3s;
+}
+
+    nav a:hover {
+        color: #BD8232; /* Gold accent */
+    }
+
+/* SHARED PAGE HEADER */
+.page-header-section, .story-sec-header, .artisan-banner {
+    background: #7B160E;
+    color: #FAF3CD;
+    text-align: center;
+    padding: 50px 20px;
+    border-bottom: 8px solid #1A1A1A;
+}
+
+    .page-header-section h1 {
+        font-size: 52px;
+        font-family: 'Garamond', Georgia, serif;
+        color: #FAF3CD;
+        font-weight: 700;
+        margin-bottom: 25px;
+        text-transform: uppercase;
+        letter-spacing: 6px;
+        margin-bottom: 10px;
+    }
+
+    .page-header-section p {
+        font-style: italic;
+        font-size: 15px;
+        max-width: 700px;
+        margin: 0 auto;
+    }
+
+/*SHARED BUTTONS*/
+.btn-read {
+    display: inline-block;
+    padding: 12px 30px;
+    background: #1A1A1A;
+    color: #FAF3CD;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 12px;
+    transition: 0.3s;
+    transition: background 0.3s ease, transform 0.1s ease;
+}
+
+    .btn-read:hover {
+        background: #7B160E;
+    }
 
 
+footer {
+    background: #1A1A1A;
+    color: #FAF3CD;
+    text-align: center;
+    padding: 60px 0px;
+    margin-top: 80px;
+}
+
+/*CURLTURAL HERITAGE AND HOME CARD STYLE*/
+section {
+    padding: 80px 10%;
+}
+
+.home-hero-img {
+    width: 100%;
+    max-width: 1000px;
+    height: 500px;
+    object-fit: cover;
+    margin-bottom: 30px;
+}
+
+.home-about-section {
+    padding: 80px 15%;
+    text-align: center;
+    background: #FDFCF8;
+}
+
+.home-section-title {
+    text-align: center;
+    color: #7B160E;
+    font-size: 32px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 30px;
+}
+
+
+
+
+.section-title {
+    font-size: 32px; 
+    color: #7B160E; 
+    text-align: center; 
+    letter-spacing: 4px; 
+    margin-bottom: 30px;
+}
+.heritage-grid, .home-grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+}
+
+
+.heritage-card, .home-grid-card {
+    background: #FAF3CD;
+    padding: 15px;
+    border-top: 6px solid #8C0000;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.15);
+    border-radius: 6px;
+    transition: all 0.4s ease;
+    position: relative;
+}
+
+
+    .heritage-card:hover, .home-grid-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+    }
+
+    .heritage-card img, .home-grid-card img {
+        width: 100%;
+        height: 350px;
+        object-fit: cover;
+        filter: grayscale(20%);
+    }
+
+    .heritage-card h3, .home-grid-card h3 {
+        padding: 20px 20px 5px;
+        color: #7B160E;
+        font-size: 24px;
+    }
+
+    .heritage-card p, .home-grid-card p {
+        padding: 0 20px 20px;
+        font-size: 18px;
+        color: #1A1A1A;
+    }
+
+
+
+
+
+/*HOME STYLESHEET*/
 
 .hero {
     text-align: center;
@@ -26,56 +214,6 @@
         margin-bottom: 25px;
     }
 
-/* buttons */
-
-.button {
-    background: #FFC917;
-    color: #050505;
-    padding: 10px 25px;
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: bold;
-    font-size: 18px;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-}
-
-    .button:hover {
-        background: #CD8417;
-        color: white;
-    }
-
-section {
-    padding: 70px 80px;
-}
-
-.cards {
-    display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
-    gap: 30px;
-    margin-top: 40px;
-}
-
-.card {
-    background: white;
-    padding: 25px;
-    border-radius: 8px;
-    box-shadow: 0 3px 8px rgba(0,0,0,0.1);
-    text-align: center;
-}
-
-    .card img {
-        width: 100%;
-        height: 180px;
-        object-fit: cover;
-        border-radius: 5px;
-        margin-bottom: 15px;
-    }
-
-    .card h3 {
-        color: #8C0000;
-    }
-
 
 .cta {
     text-align: center;
@@ -88,24 +226,6 @@ section {
 
 
 /* SHOP STYLE SHEET*/
-.shop-cont h1 {
-    text-align: center;
-    font-size: 40px;
-    color: #7B160E;
-    letter-spacing: 1.5px;
-    margin-top: 50px;
-    padding-bottom: 10px;
-}
-
-    .shop-cont h1::after {
-        content: "";
-        display: block;
-        width: 120px;
-        height: 4px;
-        background: #7B160E;
-        margin: 10px auto;
-        border-radius: 2px;
-    }
 /*hero banner*/
 .carousel {
     position: relative;
@@ -236,58 +356,12 @@ section {
 /*filter*/
 
 
-.btn-active-text {
-    display: inline-block; /* needed for transform to work properly */
-    padding: 12px 30px;
-    background: #1A1A1A;
-    color: #FAF3CD;
-    border: none; /* remove default button border */
-    border-radius: 4px;
-    font-weight: bold;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    font-size: 12px;
-    cursor: pointer; /* shows pointer on hover */
-    outline: none;
-    transition: background 0.3s ease, transform 0.1s ease;
-}
-
-    .btn-active-text:hover,
-    .btn-active-text:active {
-        background-color: #7B160E;
-    }
-
-
 
 
 
 
 /* STORIES STYLESHEET*/
 
-.story-sec-header {
-    background-color: #7B160E;
-    text-align: center;
-    padding: 80px 20px;
-    border-bottom: 10px solid black;
-}
-
-.story-sec-header h1 {
-    font-size: 52px;
-    font-family: 'Garamond', Georgia, serif;
-    letter-spacing: 6px;
-    color: #FAF3CD;
-    font-weight: 700;
-    margin-bottom: 25px;
-    text-transform:uppercase;
-}
-
-.story-page-desc {
-    width: 70%;
-    margin: 0 auto;
-    font-size: 15px;
-    color: #FAF3CD;
-    font-style: italic;
-}
 
 
 .container {
@@ -349,26 +423,6 @@ section {
         color: #8C0000;
     }
 
-/* Read more, a href */
-
-.read {
-    display: inline-block;
-    padding: 12px 30px;
-    background: #1A1A1A;
-    color: #FAF3CD;
-    border-radius: 4px;
-    text-decoration: none;
-    font-weight: bold;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    font-size: 12px;
-    transition: 0.3s;
-}
-
-    .read:hover {
-        background: #CD8417;
-        color: white;
-    }
 
 
 
@@ -377,13 +431,6 @@ section {
 
 /* OUR ARTISANS STYLESHEET */
 
-.our-artisans-page * {
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-    line-height: 1.5;
-    font-family: 'Segoe UI', sans-serif;
-}
 
 .our-artisans-page .our-artisans {
     width: 100%;
@@ -391,33 +438,6 @@ section {
     background-color: #fff;
 }
 
-.our-artisans-page .artisan-banner {
-    background-color: #7B160E;
-    text-align: center;
-    padding: 80px 20px;
-}
-
-.our-artisans-page .artisan-banner h1 {
-    font-size: 52px;
-    font-family: 'Garamond', Georgia, serif;
-    letter-spacing: 6px;
-    color: #FAF3CD;
-    font-weight: 700;
-    margin-bottom: 25px;
-}
-
-.our-artisans-page .artisan-page-description {
-    width: 70%;
-    margin: 0 auto;
-    font-size: 15px;
-    color: #FAF3CD;
-    font-style: italic;
-}
-
-.our-artisans-page .artisan-divider {
-    height: 10px;
-    background-color: black;
-}
 
 .our-artisans-page .artisan-wrapper {
     display: flex;
@@ -451,28 +471,7 @@ section {
     margin-top: 20px;
 }*/
 
-.our-artisans-page .artisan-content .artisan-button {
-    margin-top: 40px;
-}
 
-.our-artisans-page .artisan-content .artisan-button a {
-    display: inline-block;
-    padding: 12px 30px;
-    background: #1A1A1A;
-    color: #FAF3CD;
-    border-radius: 4px;
-    text-decoration: none;
-    font-weight: bold;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    font-size: 12px;
-    transition: 0.3s;
-}
-
-.our-artisans-page .artisan-content .artisan-button a:hover {
-    background: #CD8417;
-    color: white;
-}
 
 .our-artisans-page .artisan-image-section {
     width: 40%;

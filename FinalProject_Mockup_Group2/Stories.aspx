@@ -3,9 +3,9 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
 
    
-    <div class="story-sec-header">
+    <div class="page-header-section">
     <h1>Stories</h1>
-    <p class ="story-page-desc">"Through stories and shared experiences, traditions and cultural heritage are preserved and passed on to future generations."</p>
+    <p>"Through stories and shared experiences, traditions and cultural heritage are preserved and passed on to future generations."</p>
    </div>
 
 <div class="container">
@@ -23,7 +23,7 @@
         continue reading the full article.
         </p>
 
-        <a class="read">
+        <a class="btn-read">
         Read Full Story
         </a>
 
@@ -47,7 +47,7 @@
             continue reading the full article.
             </p>
 
-            <a class="read">
+            <a class="btn-read">
             Read More
             </a>
 
@@ -65,7 +65,7 @@
             continue reading the full article.
             </p>
 
-            <a class="read">
+            <a class="btn-read">
             Read More
             </a>
 
@@ -83,7 +83,7 @@
             continue reading the full article.
             </p>
 
-            <a class="read">
+            <a class="btn-read">
             Read More
             </a>
 

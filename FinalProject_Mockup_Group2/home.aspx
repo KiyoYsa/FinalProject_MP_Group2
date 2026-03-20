@@ -24,28 +24,28 @@
         <h2 class="home-section-title">Explore</h2>
         <div class="home-grid-container">
             
-            <div class="heritage-card home-grid-card">
+            <div class="home-grid-card">
                 <img src="images/artisan.jpg" alt="Artisan">
                 <h3 style="font-size: 1.2rem;">Our Artisans</h3>
                 <p>Meet the creators and hear their stories.</p>
                 <div style="padding: 0 20px 20px;"><a href="OurArtisans.aspx" class="btn-read">Meet Artisans</a></div>
             </div>
 
-            <div class="heritage-card home-grid-card">
+            <div class="home-grid-card">
                 <img src="images/craft.jpg" alt="Craft">
                 <h3 style="font-size: 1.2rem;">Crafts + Shop</h3>
                 <p>Discover traditional T'nalak weaving.</p>
                 <div style="padding: 0 20px 20px;"><a href="shop.aspx" class="btn-read">Discover Crafts</a></div>
             </div>
 
-            <div class="heritage-card home-grid-card">
+            <div class="home-grid-card">
                 <img src="images/heritage.jpg" alt="Heritage">
                 <h3 style="font-size: 1.2rem;">Cultural Heritage</h3>
                 <p>Learn the meaning behind the designs.</p>
                 <div style="padding: 0 20px 20px;"><a href="CulturalHeritage.aspx" class="btn-read">Learn More</a></div>
             </div>
 
-            <div class="heritage-card home-grid-card">
+            <div class="home-grid-card">
                 <img src="images/story.jpg" alt="Stories">
                 <h3 style="font-size: 1.2rem;">Stories</h3>
                 <p>Read oral histories from the Lake Sebu elders.</p>
