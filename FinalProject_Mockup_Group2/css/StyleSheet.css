@@ -116,16 +116,16 @@ header {
     width:100%;
 }
 
-    .page-header-section h1 {
-        font-size: 52px;
-        font-family: 'Garamond', Georgia, serif;
-        color: #FAF3CD;
-        font-weight: 700;
-        margin-bottom: 25px;
-        text-transform: uppercase;
-        letter-spacing: 6px;
-        margin-bottom: 10px;
-    }
+.page-header-section h1 {
+    font-size: 52px;
+    font-family: 'Garamond', Georgia, serif;
+    color: #FAF3CD;
+    font-weight: 700;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+    letter-spacing: 6px;
+    margin-bottom: 10px;
+}
 
     .page-header-section p {
         font-style: italic;
@@ -135,18 +135,17 @@ header {
     }
 
 /*SHARED BUTTONS*/
-.btn-read {
+.btn-read, .btn-read:visited {
     display: inline-block;
     padding: 12px 30px;
     background: #1A1A1A;
     color: #FAF3CD;
     border-radius: 4px;
-    text-decoration: none;
     font-weight: bold;
     text-transform: uppercase;
+    text-decoration: none;
     letter-spacing: 1px;
     font-size: 12px;
-    transition: 0.3s;
     transition: background 0.3s ease, transform 0.1s ease;
 }
 
@@ -154,6 +153,10 @@ header {
         background: #7B160E;
     }
 
+    .btn-read a {
+        text-decoration: none;
+        color: inherit;
+    }
 
 footer {
     background: #1A1A1A;
@@ -491,19 +494,20 @@ section {
 
 /* OUR ARTISANS STYLESHEET */
 
-
 .our-artisans-page .our-artisans {
     width: 100%;
     text-align: center;
     background-color: #fff;
+    padding: 0;
 }
 
 
 .our-artisans-page .artisan-wrapper {
+    max-width: 1400px;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 0px 60px;
+    padding: 0px 40px;
     margin: 80px auto;
     flex-wrap: wrap;
     background-color: #fff;
@@ -523,15 +527,6 @@ section {
     color: #222;
     letter-spacing: 1px;
 }
-/*
-.our-artisans-page .artisan-content p {
-    font-family: sans-serif;
-    font-size: 18px;
-    color: black;
-    margin-top: 20px;
-}*/
-
-
 
 .our-artisans-page .artisan-image-section {
     width: 40%;
@@ -569,6 +564,7 @@ section {
     }
 
     .our-artisans-page .artisan-content .artisan-button a {
+        color: #BD8232;
         margin-top: 30px;
         text-align: center;
     }
@@ -576,5 +572,160 @@ section {
     .our-artisans-page .artisan-image-section {
         width: 100%;
         margin-top: 25px;
+    }
+}
+
+
+
+/* LOGIN PAGE */
+
+/*.login-page body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Garamond, sans-serif;
+}*/
+
+.login-page {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    background: #FDF6E3;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-page .login-container {
+    display: flex;
+    width: 900px;
+    max-width: 95%;
+    height: 400px;
+    background: white;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+}
+
+.login-page .login-image {
+    flex: 1;
+    background-image: url('https://fameplus.com/uploads/userfiles/AC_Tiboli%20Weavers%20Img4.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.login-page .login-image::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(rgba(122,28,28,0.6), rgba(62,39,35,0.7));
+}
+
+    .login-page .login-image-text {
+        position: absolute;
+        z-index: 2;
+        color: #D4AF37;
+        font-weight: bold;
+        bottom: 20px;
+        left: 20px;
+        font-size: 20px;
+        font-family: Garamond, sans-serif;
+    }
+
+    .login-page .login-form {
+        flex: 1;
+        padding: 40px 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        font-family: Garamond, sans-serif;
+    }
+
+.login-page .login-title {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: #7B160E;
+    margin-bottom: 30px;
+}
+
+.login-page .input-group {
+    position: relative;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.login-page .input-group svg {
+    position: absolute;
+    top: 50%;
+    left: 12px;
+    transform: translateY(-50%);
+    fill: #7A1C1C;
+    width: 20px;
+    height: 20px;
+}
+
+.login-page .login-input {
+    width: 100%;
+    padding: 12px 42px 12px 42px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    transition: 0.3s;
+    box-sizing: border-box;
+}
+
+.login-page .login-input:focus {
+    border-color: #7B160E;
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(122,28,28,0.2);
+}
+
+.login-page .toggle-password {
+    position: absolute;
+    top: 50%;
+    right: 12px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    z-index: 3;
+}
+
+.login-page .login-btn {
+    width: 100%;
+    padding: 12px;
+    background: #7A1C1C;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 10px;
+}
+
+.login-page .login-btn:hover {
+    background: #5c1515;
+}
+
+.login-page .login-error {
+    color: #b00020;
+    background: #fdecea;
+    padding: 10px;
+    border-radius: 6px;
+    margin-bottom: 15px;
+    font-size: 14px;
+    display: block;
+}
+
+@media (max-width: 768px) {
+    .login-page .login-container {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .login-page .login-image {
+        height: 200px;
     }
 }

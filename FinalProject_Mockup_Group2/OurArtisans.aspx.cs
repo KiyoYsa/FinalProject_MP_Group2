@@ -1,9 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.UI;
-using System.Web.UI.WebControls;
+using System.Configuration;
+using System.Data;
+using System.Data.SqlClient;
 
 namespace FinalProject_Mockup_Group2
 {
@@ -11,7 +9,31 @@ namespace FinalProject_Mockup_Group2
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            if (!IsPostBack)
+            {
+                LoadArtisans();
+            }
+        }
 
+        private void LoadArtisans()
+        {
+            string connStr = ConfigurationManager.ConnectionStrings["DreamweaversDB"].ConnectionString;
+
+            using (SqlConnection conn = new SqlConnection(connStr))
+            {
+                string query = "SELECT ArtisanName, ArtisanBio, ArtisanLocation, ProfileImageURL FROM Artisans";
+
+                using (SqlCommand cmd = new SqlCommand(query, conn))
+                {
+                    conn.Open();
+
+                    using (SqlDataReader reader = cmd.ExecuteReader())
+                    {
+                        rptArtisans.DataSource = reader;
+                        rptArtisans.DataBind();
+                    }
+                }
+            }
         }
     }
 }
