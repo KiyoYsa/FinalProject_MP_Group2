@@ -7,26 +7,24 @@
             <p>"The T'nalak is not just cloth; it is the physical manifestation of a dream bestowed by Fu Dalu, the Spirit of the Abaca."</p>
         </div>
 
-        <section style="display: flex; align-items: center; gap: 60px; flex-wrap: wrap; padding: 60px;">
-            <div style="flex: 1; min-width: 300px;">
-                <img src="images/fu-dalu-spirit.jpg" style="width: 100%; border: 1px solid #1A1A1A; padding: 10px;" alt="The Weaver's Loom" />
+        <section class="heritage-section flex-container">
+            <div class="featured-img-frame">
+                <img src="images/tboli.jpg" class="heritage-img height-400" alt="The Weaver's Loom" />
             </div>
             <div style="flex: 1; min-width: 300px;">
-                <h2 style="font-size: 32px; color: #7B160E; margin-bottom: 20px;">The Language of Dreams</h2>
-                <p style="font-size: 18px; color: #1A1A1A; margin-bottom: 20px; line-height: 1.8;">
-                    The T'boli women, known as <b>Dreamweavers</b>, do not use patterns or drawings. They weave from memory, 
-                interpreting sacred designs sent to them in dreams. This spiritual connection ensures that no two T'nalak 
-                pieces are ever identical.
+                <h2 class="section-title left-title">The Language of Dreams</h2>
+                <p class="section-desc">
+                    The T'boli women, known as <b>Dreamweavers</b>, do not use patterns or drawings. They weave from memory, interpreting sacred designs sent to them in dreams. This spiritual connection ensures that no two T'nalak pieces are ever identical.
                 </p>
-                <ul style="list-style: none; margin-bottom: 30px;">
-                    <li style="margin-bottom: 10px; border-left: 4px solid #7B160E; padding-left: 15px;"><strong>Respect for Fu Dalu:</strong> Weavers must follow strict taboos to avoid offending the spirit.</li>
-                    <li style="margin-bottom: 10px; border-left: 4px solid #7B160E; padding-left: 15px;"><strong>Natural Pigments:</strong> Colors are sourced from <i>K’nalum</i> trees and <i>Liko</i> roots.</li>
+                <ul class="sacred-list">
+                    <li><strong>Respect for Fu Dalu:</strong> Weavers must follow strict taboos to avoid offending the Spirit of the Abaca, who bestows the designs.</li>
+                    <li><strong>Natural Pigments:</strong> Sourced from <i>K’nalum</i> leaves (black, representing the forest shadows) and <i>Liko</i> roots (red, symbolizing the bravery and blood of ancestors).</li>
                 </ul>
             </div>
         </section>
 
-        <section>
-            <h2 class="section-title">CORE MOTIFS</h2>
+        <section class="heritage-section">
+            <h2 class="section-title">Core Motifs</h2>
             <div class="heritage-grid">
                 <asp:Repeater ID="rptPatterns" runat="server">
                     <ItemTemplate>
@@ -45,78 +43,119 @@
             </div>
         </section>
 
-        <section style="padding: 60px;">
-            <h2 style="font-size: 32px; color: #7B160E; margin-bottom: 30px;">Textile Authentication Data</h2>
-            <table style="width: 100%; border-collapse: collapse; text-align: left; background: white; border: 1px solid #1A1A1A;">
-                <tr style="background: #1A1A1A; color: #FAF3CD;">
-                    <th style="padding: 20px;">Property</th>
-                    <th style="padding: 20px;">Specification</th>
-                    <th style="padding: 20px;">Spiritual & Cultural Meaning</th>
-                </tr>
-                <tr style="border-bottom: 1px solid #eee;">
-                    <td style="padding: 20px;"><strong>Base Material</strong></td>
-                    <td style="padding: 20px;">Wild Abaca (Musa textilis)</td>
-                    <td style="padding: 20px;"><b>White (Natural):</b> Represents the "Purity of the Dream." It is left undyed to symbolize a direct link to Fu Dalu.</td>
-                </tr>
-                <tr style="border-bottom: 1px solid #eee;">
-                    <td style="padding: 20px;"><strong>The Black Dye</strong></td>
-                    <td style="padding: 20px;">K’nalum Leaves (Fermented)</td>
-                    <td style="padding: 20px;">Represents the soil, the roots of the abaca, and the deep shadows of the forest where spirits reside.</td>
-                </tr>
-                <tr style="border-bottom: 1px solid #eee;">
-                    <td style="padding: 20px;"><strong>The Red Dye</strong></td>
-                    <td style="padding: 20px;">Liko Roots</td>
-                    <td style="padding: 20px;">Represents human life, the blood of the ancestors, and the bravery of the T'boli people.</td>
-                </tr>
-            </table>
-        </section>
+        <section class="heritage-section">
+            <div style="text-align: center; margin-bottom: 20px; max-width: 800px; margin-left: auto; margin-right: auto;">
+                <h2 class="section-title">The T'nalak Process</h2>
+                <p class="section-desc">
+                    Every T'nalak cloth undergoes a rigorous seven-stage journey that reflects the T'boli identity.      
+                </p>
+            </div>
 
-        <section style="padding: 60px; background-color: #f9f9f9; border-top: 1px solid #eee; border-bottom: 1px solid #eee;">
-            <h2 style="font-size: 32px; color: #7B160E; margin-bottom: 30px; text-align: center;">Sacred Taboos of the Dreamweaver</h2>
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 40px;">
-                <div style="padding: 20px; border: 1px solid #7B160E; background: white;">
-                    <h3 style="color: #7B160E; border-bottom: 1px solid #7B160E; padding-bottom: 10px;">No Cutting</h3>
-                    <p style="line-height: 1.6;">A T'nalak cloth must never be cut while it is still being woven on the loom. To do so is seen as "wounding" the dream and showing deep disrespect to the spirits.</p>
+            <div class="flex-container" style="margin-bottom: 40px;">
+                <div class="process-img-frame">
+                    <img src="images/kedungon.jpg" class="heritage-img height-300" alt="Kedungon Process" />
                 </div>
-                <div style="padding: 20px; border: 1px solid #7B160E; background: white;">
-                    <h3 style="color: #7B160E; border-bottom: 1px solid #7B160E; padding-bottom: 10px;">No Stepping Over</h3>
-                    <p style="line-height: 1.6;">One must never step over the abaca fibers or the backstrap loom. This act is believed to offend Fu Dalu, the Spirit of the Abaca, and may result in the weaver losing her ability to dream.</p>
+                <div style="flex: 1; min-width: 300px;">
+                    <span class="step-label">01. KEDUNGON</span>
+                    <h3 class="step-title">Harvesting & Stripping</h3>
+                    <p class="step-text">The process begins with harvesting 2-3 year old abaca plants. A prayer is offered to Fu Dalu before the trunk is stripped into layers. The whiter, finer threads are selected for the weave.</p>
                 </div>
-                <div style="padding: 20px; border: 1px solid #7B160E; background: white;">
-                    <h3 style="color: #7B160E; border-bottom: 1px solid #7B160E; padding-bottom: 10px;">Peace of Mind</h3>
-                    <p style="line-height: 1.6;">A weaver must be in a state of spiritual and emotional peace. If she is angry or grieving, she must stop weaving, as negative emotions are thought to be "locked" into the pattern.</p>
+            </div>
+
+            <div class="flex-container flex-reverse" style="margin-bottom: 80px;">
+                <div style="flex: 1; min-width: 300px;">
+                    <span class="step-label">02. TEMBONG</span>
+                    <h3 class="step-title">Connecting the Fibers</h3>
+                    <p class="step-text">After air-drying, fibers are hand-rubbed to make them pliant. The women then individually connect the fibers from end to end by tying tiny, invisible knots.</p>
+                </div>
+                <div class="process-img-frame">
+                    <img src="images/tembong.jpg" class="heritage-img height-300" alt="Tembong" />
+                </div>
+            </div>
+
+            <div class="flex-container" style="margin-bottom: 80px;">
+                <div class="process-img-frame">
+                    <img src="images/semdang.jpg" class="heritage-img height-300" alt="Semdang" />
+                </div>
+                <div style="flex: 1; min-width: 300px;">
+                    <span class="step-label">03. SEMDANG</span>
+                    <h3 class="step-title">Setting the Loom</h3>
+                    <p class="step-text">The connected fibers are set on a <i>gono smoi</i> (loom frame). A wooden bar called a <i>teladay</i> is used to hold the fibers perfectly even and spread across the frame.</p>
+                </div>
+            </div>
+
+            <div class="flex-container flex-reverse" style="margin-bottom: 80px;">
+                <div style="flex: 1; min-width: 300px;">
+                    <span class="step-label">04. MEBED</span>
+                    <h3 class="step-title">The Dream Tying</h3>
+                    <p class="step-text">This is the resist-dye knotting phase. Without sketches, weavers tie knots based on a mental picture. Beeswax-coated threads ensure the dye does not penetrate the reserved areas.</p>
+                </div>
+                <div class="process-img-frame">
+                    <img src="images/mebed.jpg" class="heritage-img height-300" alt="Mebed" />
+                </div>
+            </div>
+
+            <div class="flex-container" style="margin-bottom: 80px;">
+                <div class="process-img-frame">
+                    <img src="images/temogo.jpg" class="heritage-img height-300" alt="Temogo" />
+                </div>
+                <div style="flex: 1; min-width: 300px;">
+                    <span class="step-label">05. TEMOGO & HEMTO</span>
+                    <h3 class="step-title">Dyeing & Untying</h3>
+                    <p class="step-text">The black dye process takes about three weeks of boiling. Once absorbed, knots for red areas are removed and dyed in Liko root for another week before revealing the natural white.</p>
+                </div>
+            </div>
+
+            <div class="flex-container flex-reverse" style="margin-bottom: 80px;">
+                <div style="flex: 1; min-width: 300px;">
+                    <span class="step-label">06. MEWEL</span>
+                    <h3 class="step-title">Backstrap Weaving</h3>
+                    <p class="step-text">The dyed warp is set on the <i>legogong</i>. Weaving must happen in a cool area to prevent snapping. The weaver beats the threads three times to ensure the weave is tight and light-proof.</p>
+                </div>
+                <div class="process-img-frame">
+                    <img src="images/mewel.png" class="heritage-img height-300" alt="Mewel" />
+                </div>
+            </div>
+
+            <div class="flex-container">
+                <div class="process-img-frame">
+                    <img src="images/semaki.jpg" class="heritage-img height-300" alt="Semaki" />
+                </div>
+                <div style="flex: 1; min-width: 300px;">
+                    <span class="step-label">07. SEMAKI</span>
+                    <h3 class="step-title">Burnishing the Surface</h3>
+                    <p class="step-text">A cowrie shell is rubbed repeatedly on the moist fabric. This requires significant strength to flatten knots and produce the iconic, coruscating gloss that T'nalak is known for.</p>
                 </div>
             </div>
         </section>
 
-        <section style="background: #FAF3CD; color: #7B160E; margin: 80px; padding: 80px; border-radius: 6px;">
-            <h2 style="color: #7B160E; font-size: 32px; margin-bottom: 20px;">The Lifecycle of T'nalak</h2>
-            <p style="font-size: 18px; color: #1A1A1A; margin-bottom: 20px;">The creation process can take 3 to 6 months. It is a slow, meditative ritual.</p>
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 30px;">
-                <div>
-                    <h4 style="color: #1A1A1A;">1. Kedungon</h4>
-                    <p style="font-size: 18px; color: #1A1A1A; margin-bottom: 20px;">The meticulous stripping of abaca stalks to find the finest fibers.</p>
+        <section class="heritage-section">
+            <h2 class="section-title">Sacred Taboos</h2>
+            <p class="section-desc" style="text-align: center; max-width: 800px; margin: 0 auto 20px auto;">
+                To protect the sanctity of the T'nalak, every Dreamweaver must observe these ancestral laws.
+            </p>
+            <div class="taboo-grid">
+                <div class="taboo-card">
+                    <h3>No Cutting</h3>
+                    <p class="step-text">A T'nalak cloth must never be cut while it is still on the loom. To do so is seen as "wounding" the dream and showing disrespect to the spirits.</p>
                 </div>
-                <div>
-                    <h4 style="color: #1A1A1A;">2. Tembong</h4>
-                    <p style="font-size: 18px; color: #1A1A1A; margin-bottom: 20px;">The "Dream Tying" where threads are knotted to block the dye.</p>
+                <div class="taboo-card">
+                    <h3>No Stepping Over</h3>
+                    <p class="step-text">One must never step over the fibers or the loom. This act offends Fu Dalu and may result in the weaver losing her ability to dream.</p>
                 </div>
-                <div>
-                    <h4 style="color: #1A1A1A;">3. Mebed</h4>
-                    <p style="font-size: 18px; color: #1A1A1A; margin-bottom: 20px;">Boiling the fibers in natural vats for weeks to reach true colors.</p>
-                </div>
-                <div>
-                    <h4 style="color: #1A1A1A;">4. Mewel</h4>
-                    <p style="font-size: 18px; color: #1A1A1A; margin-bottom: 20px;">Weaving on a backstrap loom using the weaver's body as tension.</p>
+                <div class="taboo-card">
+                    <h3>Peace of Mind</h3>
+                    <p class="step-text">A weaver must be in a state of spiritual peace. If she is angry or grieving, she must stop weaving, as negative emotions are "locked" into the pattern.</p>
                 </div>
             </div>
         </section>
 
-        <div id="historyModal" style="display: none; position: fixed; z-index: 1000; left: 0; top: 0; width: 100%; height: 100%; background-color: rgba(0,0,0,0.7);">
-            <div style="background-color: #FAF3CD; margin: 15% auto; padding: 30px; border: 1px solid #7B160E; width: 50%; border-radius: 8px; position: relative;">
-                <span onclick="closeModal()" style="position: absolute; right: 20px; top: 10px; cursor: pointer; font-size: 28px; color: #7B160E;">&times;</span>
-                <h2 id="modalTitle" style="color: #7B160E; margin-top: 0;">Pattern History</h2>
-                <p id="modalBody" style="color: #1A1A1A; line-height: 1.6; font-size: 18px;"></p>
+        <div id="historyModal" class="modal-overlay">
+            <div class="modal-content">
+                <span onclick="closeModal()" class="close-btn">&times;</span>
+                <h2 id="modalTitle" style="color: #7B160E; margin-top: 0; font-family: 'Garamond', serif;">Pattern History</h2>
+                <hr style="border: 0; border-top: 1px solid #7B160E; margin-bottom: 20px;" />
+                <p id="modalBody" class="step-text" style="font-size: 18px;"></p>
             </div>
         </div>
 
@@ -126,16 +165,12 @@
                 document.getElementById('modalBody').innerText = history;
                 document.getElementById('historyModal').style.display = "block";
             }
-
             function closeModal() {
                 document.getElementById('historyModal').style.display = "none";
             }
-
             window.onclick = function (event) {
                 var modal = document.getElementById('historyModal');
-                if (event.target == modal) {
-                    closeModal();
-                }
+                if (event.target == modal) { closeModal(); }
             }
         </script>
     </main>
