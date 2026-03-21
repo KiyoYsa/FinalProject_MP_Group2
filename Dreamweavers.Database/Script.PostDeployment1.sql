@@ -35,7 +35,7 @@ USING (VALUES
      'https://outoftownblog.com/wp-content/uploads/2025/03/Barbara-Ofoing-showing-her-creations-700x933.jpg'
     )
 
-) AS source (ArtisanID, ArtisanName, ArtisanBio, ArtisanLocation, ProfileImageURL)
+) AS source (ArtisanID, ArtisanName, ArtisanBio, ArtisanLocation, ProfileImage)
 
 ON target.ArtisanID = source.ArtisanID
 
@@ -44,11 +44,11 @@ WHEN MATCHED THEN
         ArtisanName = source.ArtisanName,
         ArtisanBio = source.ArtisanBio,
         ArtisanLocation = source.ArtisanLocation,
-        ProfileImageURL = source.ProfileImageURL
+        ProfileImage = source.ProfileImage
 
 WHEN NOT MATCHED THEN
-    INSERT (ArtisanID, ArtisanName, ArtisanBio, ArtisanLocation, ProfileImageURL)
-    VALUES (source.ArtisanID, source.ArtisanName, source.ArtisanBio, source.ArtisanLocation, source.ProfileImageURL);
+    INSERT (ArtisanID, ArtisanName, ArtisanBio, ArtisanLocation, ProfileImage)
+    VALUES (source.ArtisanID, source.ArtisanName, source.ArtisanBio, source.ArtisanLocation, source.ProfileImage);
 
 SET IDENTITY_INSERT Artisans OFF;
 
@@ -113,3 +113,43 @@ WHEN NOT MATCHED BY SOURCE THEN
     DELETE;
 
 SET IDENTITY_INSERT Users OFF;
+
+/* for crafts db*/
+MERGE INTO Crafts AS target
+USING (VALUES
+    (1, 1, 2, 'Bed Klagan Dark Red', 'Handwoven T’nalak in dark red.', 'Queen Size', 'Available', 'images/bed_klagan_darkred.jpg'),
+    (1, 1, 2, 'Bed Duon Blata Dark Blue/Light Blue/Natural', 'Handwoven T’nalak in light and dark blue.', 'Queen Size', 'Available', 'images/bed_duon_blue.jpg'),
+    (1, 2, 3, 'Handwoven Malong - Black and Gold', 'Traditional woven garment in black and gold.', 'Single Size', 'Available', 'images/malong_black_gold.jpg'),
+    (1, 2, 3, 'Handwoven Malong - Gold and Fuchsia', 'Traditional woven garment in gold and fuchsia.', 'Single Size', 'Available', 'images/malong_gold_fuchsia.jpg'),
+    (1, 4, 4, 'Heritage Poncho', 'Cotton T’nalak poncho from Cotabato with traditional Filipino patterns.', 'Medium', 'Available', 'images/heritage_poncho.jpg')
+) AS source (ArtisanID, PatternID, CategoryID, CraftName, CraftDesc, CraftDimension, [Status], Thumbnail)
+ON target.CraftName = source.CraftName
+WHEN MATCHED THEN
+    UPDATE SET 
+        ArtisanID = source.ArtisanID,
+        PatternID = source.PatternID,
+        CategoryID = source.CategoryID,
+        CraftDesc = source.CraftDesc,
+        CraftDimension = source.CraftDimension,
+        [Status] = source.[Status],
+        Thumbnail = source.Thumbnail
+WHEN NOT MATCHED THEN
+    INSERT (ArtisanID, PatternID, CategoryID, CraftName, CraftDesc, CraftDimension, [Status], Thumbnail)
+    VALUES (source.ArtisanID, source.PatternID, source.CategoryID, source.CraftName, source.CraftDesc, source.CraftDimension, source.[Status], source.Thumbnail);
+
+/* for categories db*/
+MERGE INTO Categories AS target
+USING (VALUES
+    ('All'),
+    ('Cloth'),
+    ('Malong'),
+    ('Clothing'),
+    ('Bags'),
+    ('Home')
+) AS source (CategoryName)
+ON target.CategoryName = source.CategoryName
+WHEN MATCHED THEN
+    UPDATE SET CategoryName = source.CategoryName
+WHEN NOT MATCHED THEN
+    INSERT (CategoryName)
+    VALUES (source.CategoryName);

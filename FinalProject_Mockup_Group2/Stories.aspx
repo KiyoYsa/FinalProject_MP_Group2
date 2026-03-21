@@ -13,7 +13,7 @@
 
     <div class="featured">
 
-        <img src="images/pic1.png" />
+        <img src="images/tboli weave their dream.jpg" />
 
         <h3>How the T'boli women weave their dreams </h3>
 
@@ -36,7 +36,7 @@
     <div class="blog-grid">
 
         <div class="storiescard">
-            <img src="images/pic1.png" />
+            <img src="images/journey to school.jpg" />
 
             <h3>A girl's journey to school</h3>
 
@@ -47,14 +47,14 @@
             </p>
 
             <a class="btn-read" href="https://www.savethechildren.org.ph/our-work/our-stories/story/watch-a-tboli-girls-journey-to-school/" target="_blank">
-            Read the full Story
+            Read More
             </a>
 
         </div>
 
 
         <div class="storiescard">
-            <img src="images/pic2.png" />
+            <img src="images/hilltop legacy.jpg" />
 
             <h3>Hilltop Legacy in Lake Sebu</h3>
 
@@ -70,9 +70,9 @@
 
         </div>
 
-
+        <!--
         <div class="storiescard">
-            <img src="images/pic3.png" />
+            <img src="images/tbolis journey.webp" />
 
             <h3>A T'boli Women's Journey</h3>
 
@@ -86,53 +86,131 @@
             </a>
 
         </div>
-
+        -->
     </div>
 
 </div>
 
     <section class="celeb-strip">
-    <h2>T’boli Festival and Celebrations</h2>
+     <h2>T’boli Festival and Celebrations</h2>
     <p class="subtitle">A vibrant glimpse into the dances, music, and traditions that bring T’boli culture to life</p>
+
+          <div class="strip strip-1">
+              <div class="image">
+                  <img src="images/tnalak festival.jpg" alt="T'nalak Festival">
+              </div>
+              <div class="text">
+                  <h3>The T'nalak Festival</h3>
+                  <p>As the province's founding anniversary, this is the largest celebration in South Cotabato. It takes its name from the sacred cloth known as T'nalak, which is woven by T'boli "dream weavers" using their dreams as inspiration. The celebration represents the "interweaving" of the province's many cultures.</p>
+              </div>
+              <p class="festival-date" data-type="fixed" data-date="07-18">
+                Countdown: <span class="countdown"></span>
+            </p>
+          </div>
+
+    <div class="strip strip-2">
+         <div class="image">
+             <img src="images/helobung festival.jpg" alt="Seslong Festival">
+         </div>
+        <div class ="text">
+            <h3>The Helobung Festival</h3>
+            <p>Held in the municipality of Lake Sebu, "Helubong" means "never-ending joy." It is a celebration of the T'boli people's cultural endurance and a magnificent thanksgiving for a good crop. It includes colorful street dance, ethnic music performed on the hegelung (lute), and traditional games like horse fighting (kadal kuda).</p>
+        </div>
+        <p class="festival-date" data-type="fixed" data-date="11-09">
+            Countdown: <span class="countdown"></span>
+        </p>
+    </div>
+
+
            
     <div class="strip strip-1">
         <div class="image">
-            <img src="" alt="">
+            <img src="images/seslong fest.JPG" alt="Seslong Festival">
         </div>
         <div class="text">
             <h3>Seslong Festival</h3>
-            <p>TThe Seslong Festival is the T’boli’s most vibrant celebration, bringing heritage to life through colorful dances, music, chants, and traditional crafts. “Seslong,” meaning marketplace or gathering, symbolizes the unity of the T’boli and neighboring tribes while marking a time of community, tradition, and joy.</p>
-            <a class="btn-read" href="#">Read More</a>
+            <p> The word "Seslong" is derived from a T'boli phrase that means "to gather for bartering." It recreates the old custom of trading commodities between highland and lowland tribes. Through cultural parades, the "Miss T'boli" pageant, and exhibits of traditional crafts and brassware, it now highlights T'boli heritage.</p>
         </div>
+        <p class="festival-date" data-type="fixed" data-date="03-05">
+            Countdown: <span class="countdown"></span>
+        </p>
         
     </div>
 
 
     <div class="strip strip-2">
+        <div class="image">
+            <img src="images/lemlunay-festival.jpg" alt="Lemlunay Festival">
+        </div>
         <div class="text">
             <h3>Lemlunay Festival</h3>
-            <p>At Lake Sebu, the T’boli celebrate "Lemlunay" or "Good Land," to mark the beginning of the harvest season. Through vibrant songs, dances, and intricate crafts, the community honors its roots and keeps traditions alive.</p>
-            <a class="btn-read" href="https://dosjfm.com/2022/09/lemlunay-tboli-tribal-festival">Read More</a>
+            <p>"Lemlunay," also known as the T'boli Tribal Festival, is a mythical "Golden Age" or paradise with eternal peace. This is a very spiritual holiday that frequently begins with gongs and dawn ceremonies. It features large gatherings of different indigenous tribes at Lake Sebu and is a moment for the tribe to renew their vow to work toward that ideal state of life.</p>
         </div>
-        <div class="image">
-            <img src="" alt="">
-        </div>
+        
+        <p class="festival-date" data-type="september-third-week">
+            Countdown: <span class="countdown"></span>
+        </p>
     </div>
 
             
-    <div class="strip strip-1">
-        <div class="image">
-            <img src="" alt="">
-        </div>
-        <div class="text">
-            <h3>The Tnalak Festival</h3>
-            <p>The town of Lake Sebu honors the sacred t'nalak fabric with a week-long event that is full of color, music, and dance every year. Men and women parade in traditional clothing, displaying designs that convey tales of pride, dreams, and ancestry.</p>
-            <a class="btn-read" href="https://sites.google.com/addu.edu.ph/tnalakfestival/home">Read More</a>
-        </div>
-    </div>
-
+  
 
 </section>
+<script>
+    function getThirdWeekOfSeptember(year) {
+        let date = new Date(year, 8, 1); 
 
+        
+        while (date.getDay() !== 1) {
+            date.setDate(date.getDate() + 1);
+        }
+
+        //add 2 weeks
+        date.setDate(date.getDate() + 14);
+
+        return date;
+    }
+    function updateAllCountdowns() {
+        const now = new Date();
+
+        document.querySelectorAll(".festival-date").forEach(item => {
+            const type = item.getAttribute("data-type");
+            const value = item.getAttribute("data-date");
+            const countdownEl = item.querySelector(".countdown");
+
+            let festivalDate;
+
+            if (type === "fixed") {
+                const [month, day] = value.split("-");
+                festivalDate = new Date(now.getFullYear(), month - 1, day);
+
+                if (festivalDate < now) {
+                    festivalDate = new Date(now.getFullYear() + 1, month - 1, day);
+                }
+
+            } else if (type === "september-third-week") {
+                festivalDate = getThirdWeekOfSeptember(now.getFullYear());
+
+                if (festivalDate < now) {
+                    festivalDate = getThirdWeekOfSeptember(now.getFullYear() + 1);
+                }
+            }
+
+            const diff = festivalDate - now;
+
+            const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
+            const minutes = Math.floor((diff / (1000 * 60)) % 60);
+            const seconds = Math.floor((diff / 1000) % 60);
+
+            countdownEl.textContent =
+                `${days}d ${hours}h ${minutes}m ${seconds}s`;
+        });
+    }
+
+    updateAllCountdowns();
+    setInterval(updateAllCountdowns, 1000);
+
+</script>
 
 </asp:Content>

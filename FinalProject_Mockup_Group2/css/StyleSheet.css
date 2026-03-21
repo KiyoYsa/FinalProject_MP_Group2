@@ -703,6 +703,7 @@ section {
 /* MAIN STORY */
 
 .featured {
+    background:white;
     padding: 20px;
     margin-bottom: 40px;
     border-left: 8px solid #8C0000;
@@ -723,15 +724,17 @@ section {
 
 .blog-grid {
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
     margin-top: 30px;
-    gap: 25px;
+    gap: 30px;
+    padding: 50px 20px;
 }
 
 /* Cards */
 
 .storiescard {
-    background: #FAF3CD;
+    background: white;
+ 
     padding: 15px;
     border-top: 6px solid #8C0000;
     box-shadow: 0px 4px 8px rgba(0,0,0,0.15);
@@ -759,7 +762,7 @@ section {
     width: 100%;
     margin: 75px 0px;
     padding: 50px 50px;
-    background: #FFFEE0;
+    background: white;
     align-items:center;
     display: flex;
     flex-direction: column;
@@ -783,17 +786,32 @@ section {
     }
 
 /* STRIPS */
+.strip-1 .festival-date {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #8C0000;
+    font-size: 14px;
+    padding: 10px 10px;
+}
+.strip-2 .festival-date {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #FFC917;
+    font-size: 14px;
+    padding: 10px 10px;
+}
 .strip {
     
     align-items: center;
     width: 85%;
     background-color: #ffffff00;
     display: flex;
-    padding: 40px;
+    padding: 20px;
     margin-bottom: 20px;
     border-radius: 8px;
     border: 7px solid;
     color: #333;
+    
 }
 
 .strip-1 {
@@ -813,7 +831,7 @@ section {
 }
 
     .strip .image img {
-        width: 60%;
+        width: 90%;
         height: auto;
         border-radius: 8px;
         object-fit: cover;
@@ -822,7 +840,7 @@ section {
 /* Text */
 .strip .text {
     flex: 1;
-    padding: 10px 30px;
+    padding: 10px 10px;
 }
 
 .strip h3 {
@@ -832,6 +850,7 @@ section {
 
 .strip p {
     margin-bottom: 20px;
+
 }
 
 

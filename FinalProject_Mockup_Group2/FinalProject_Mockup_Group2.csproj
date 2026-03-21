@@ -111,47 +111,33 @@
     <Content Include="Content\bootstrap.rtl.min.css" />
     <Content Include="Content\Site.css" />
     <Content Include="CulturalHeritage.aspx" />
+    <Content Include="Dashboard.aspx" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="home.aspx" />
-    <Content Include="images\artisan.jpg" />
     <Content Include="images\bag.jpg" />
-    <Content Include="images\bag1.png" />
-    <Content Include="images\bag2.png" />
-    <Content Include="images\bag3.png" />
-    <Content Include="images\bib1.png" />
-    <Content Include="images\black malong.png" />
-    <Content Include="images\blue chair.png" />
-    <Content Include="images\blue cloth.png" />
-    <Content Include="images\brown chair.png" />
-    <Content Include="images\brown cloth.png" />
     <Content Include="images\closed_eye_icon.svg" />
-    <Content Include="images\crafts.jpg" />
-    <Content Include="images\culture.jpg" />
-    <Content Include="images\dress.png" />
     <Content Include="images\eye_icon.svg" />
+    <Content Include="images\helobung festival.jpg" />
+    <Content Include="images\hilltop legacy.jpg" />
+    <Content Include="images\journey to school.jpg" />
     <Content Include="images\kedungon.jpg" />
-    <Content Include="images\main %282%29.jpg" />
+    <Content Include="images\lemlunay-festival.jpg" />
     <Content Include="images\mebed.jpg" />
     <Content Include="images\mewel.png" />
     <Content Include="images\person_icon.svg" />
     <Content Include="images\pic1.png" />
     <Content Include="images\pic2.png" />
     <Content Include="images\pic3.png" />
-    <Content Include="images\pink malong.png" />
-    <Content Include="images\poncho.png" />
-    <Content Include="images\purple malong.png" />
-    <Content Include="images\red cloth.png" />
-    <Content Include="images\red pillow.png" />
     <Content Include="images\semaki.jpg" />
     <Content Include="images\semdang.jpg" />
-    <Content Include="images\stories.jpg" />
+    <Content Include="images\seslong fest.JPG" />
+    <Content Include="images\seslong festival.jpg" />
+    <Content Include="images\Tboli weave their dream.jpg" />
     <Content Include="images\tboli.jpg" />
     <Content Include="images\tembong.jpg" />
     <Content Include="images\temogo.jpg" />
-    <Content Include="images\white pillow.png" />
-    <Content Include="images\yellow cloth.png" />
-    <Content Include="images\yellow malong.png" />
+    <Content Include="images\tnalak festival.jpg" />
     <Content Include="OurArtisans.aspx" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
@@ -159,6 +145,7 @@
     <Content Include="Scripts\bootstrap.esm.min.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="images\tbolis journey.webp" />
     <None Include="Scripts\jquery-3.7.0.intellisense.js" />
     <Content Include="Scripts\jquery-3.7.0.js" />
     <Content Include="Scripts\jquery-3.7.0.min.js" />
@@ -204,6 +191,13 @@
     </Compile>
     <Compile Include="CulturalHeritage.aspx.designer.cs">
       <DependentUpon>CulturalHeritage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard.aspx.cs">
+      <DependentUpon>Dashboard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard.aspx.designer.cs">
+      <DependentUpon>Dashboard.aspx</DependentUpon>
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>

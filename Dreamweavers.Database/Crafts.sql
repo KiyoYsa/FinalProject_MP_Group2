@@ -7,7 +7,7 @@
     CraftDesc NVARCHAR(MAX),
     CraftDimension NVARCHAR(50),    
     [Status] NVARCHAR(20) DEFAULT 'Available',
-    ThumbnailURL NVARCHAR(255),
+    Thumbnail NVARCHAR(255),
     CreatedAt DATETIME DEFAULT GETDATE(),
     CONSTRAINT CHK_CraftStatus CHECK ([Status] IN ('Available', 'Archived')),   
     CONSTRAINT FK_Crafts_Artisans FOREIGN KEY (ArtisanID) 
