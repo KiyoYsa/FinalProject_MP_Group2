@@ -13,7 +13,7 @@
         <p>"Every item tells a story—crafted with care, rooted in tradition, and made for you to bring a piece of culture home."</p>
     </div>
 
-    <section style="margin-top: 40px;">
+    <section style="margin-top: 10px;">
         <h2 style="font-size: 32px; color: #7B160E; text-align: center; letter-spacing: 4px; margin-bottom: 30px;">HANDWOVEN TREASURES</h2>
         <p style="font-size: 18px; color: #1A1A1A; text-align: center;">
             Each piece is meticulously handwoven by the T’boli, blending traditional artistry with timeless elegance.

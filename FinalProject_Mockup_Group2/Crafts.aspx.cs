@@ -19,6 +19,7 @@ namespace FinalProject_Mockup_Group2
         {
             if (!IsPostBack)
             {
+                btnAll.CssClass = "btn-read active";
                 BindCrafts(0);
             }
         }
@@ -31,7 +32,6 @@ namespace FinalProject_Mockup_Group2
             if (int.TryParse(btn.CommandArgument, out categoryId))
             {
                 BindCrafts(categoryId);
-
                 UpdateFilterUI(btn);
             }
         }
@@ -68,7 +68,7 @@ namespace FinalProject_Mockup_Group2
 
                         if (dt.Rows.Count == 0)
                         {
-                            Response.Write("<h3 style='color:red; text-align:center;'>No crafts found in the database for this category.</h3>");
+                            Response.Write("<h3 id='statusMsg' style='color:red; text-align:center; position:absolute; width:100%; top:50%;'>No crafts found for this category.</h3>");
                         }
                     }
                     catch (Exception ex)
@@ -83,14 +83,17 @@ namespace FinalProject_Mockup_Group2
 
         private void UpdateFilterUI(LinkButton activeBtn)
         {
-            foreach (Control ctrl in activeBtn.Parent.Controls)
+            if (activeBtn != null && activeBtn.Parent != null)
             {
-                if (ctrl is LinkButton lb)
+                foreach (Control ctrl in activeBtn.Parent.Controls)
                 {
-                    lb.CssClass = "btn-read";
+                    if (ctrl is LinkButton lb)
+                    {
+                        lb.CssClass = "btn-read";
+                    }
                 }
+                activeBtn.CssClass = "btn-read active";
             }
-            activeBtn.CssClass = "btn-read active";
         }
     }
 }

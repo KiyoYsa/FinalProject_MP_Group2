@@ -114,7 +114,7 @@
     <Content Include="Dashboard.aspx" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
-    <Content Include="home.aspx" />
+    <Content Include="Home.aspx" />
     <Content Include="images\bag.jpg" />
     <Content Include="images\Barbara_Ofong.jpg" />
     <Content Include="images\closed_eye_icon.svg" />
@@ -209,12 +209,12 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="home.aspx.cs">
-      <DependentUpon>home.aspx</DependentUpon>
+    <Compile Include="Home.aspx.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="home.aspx.designer.cs">
-      <DependentUpon>home.aspx</DependentUpon>
+    <Compile Include="Home.aspx.designer.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
     </Compile>
     <Compile Include="OurArtisans.aspx.cs">
       <DependentUpon>OurArtisans.aspx</DependentUpon>
