@@ -18,7 +18,7 @@
                 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">x</a>
                 <a href="Home.aspx">Home</a>
                 <a href="OurArtisans.aspx">Our Artisans</a>
-                <a href="shop.aspx">Crafts</a>
+                <a href="Crafts.aspx">Crafts</a>
                 <a href="CulturalHeritage.aspx">Cultural Heritage</a>
                 <a href="Stories.aspx">Stories</a>
             </div>

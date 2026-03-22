@@ -70,23 +70,6 @@
 
         </div>
 
-        <!--
-        <div class="storiescard">
-            <img src="images/tbolis journey.webp" />
-
-            <h3>A T'boli Women's Journey</h3>
-
-            <p>
-            Before the sun rises, she is already on her way through mountains, rivers, and long lengths of road, carrying a small desire of education. 
-            Every step reveals a story of bravery, hope, and determination. Discover her strength behind her journey.
-            </p>
-
-            <a class="btn-read" href="https://sesotunawa.com/blogs/stories/a-tboli-womans-journey" target="_blank">
-            Read More
-            </a>
-
-        </div>
-        -->
     </div>
 
 </div>
@@ -115,7 +98,8 @@
         <div class ="text">
             <h3>The Helobung Festival</h3>
             <p>Held in the municipality of Lake Sebu, "Helubong" means "never-ending joy." It is a celebration of the T'boli people's cultural endurance and a magnificent thanksgiving for a good crop. It includes colorful street dance, ethnic music performed on the hegelung (lute), and traditional games like horse fighting (kadal kuda).</p>
-        </div>
+            <p>When: November 9 - 11</p>
+            </div>
         <p class="festival-date" data-type="fixed" data-date="11-09">
             Countdown: <span class="countdown"></span>
         </p>

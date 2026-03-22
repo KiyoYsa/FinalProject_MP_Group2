@@ -545,10 +545,11 @@ section {
 /*products*/
 .prod {
     width: 100%;
-    padding: 70px 0;
+    padding: 70px 40px;
     margin-top: 20px;
     display: flex;
     justify-content: center;
+    box-sizing:border-box;
 }
 
     .prod h1 {
@@ -567,6 +568,7 @@ section {
         grid-gap: 50px 150px;
         /*margin-bottom: 20px;*/
         justify-content: center;
+        max-width: 1200px;
     }
 
         .prod .prod_box .prod_card {
@@ -821,7 +823,7 @@ section {
 
 .strip-2 {
     border-color: #FFC917;
-    flex-direction: row-reverse;
+    
 }
 
 
