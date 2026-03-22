@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 <html>
 <head runat="server">
-    <title><%: Page.Title %> - T'boli Dreamweavers Archive</title>
+    <title><%: Page.Title %> - T'boli Dreamweavers Collective</title>
    
     <link runat="server" href="~/css/StyleSheet.css" rel="stylesheet" type="text/css" />
    
