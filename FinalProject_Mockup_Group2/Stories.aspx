@@ -28,7 +28,7 @@
 
     </div>
 
-    <h2 style="color:#8C0000;">Latest Stories</h2>
+    <h2 style="color:#8C0000;">Other Stories</h2>
 
          
     <!--- EXTER STORIES --->
