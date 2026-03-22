@@ -124,7 +124,7 @@
 
             <asp:PlaceHolder ID="phArtisanMenu" runat="server">
                 <p class="nav-group-title">My Workspace</p>
-                <asp:Button runat="server" ID="btnMyTab" Text="🧶 My Crafts" CssClass="nav-btn active" OnClick="SwitchTab" CommandArgument="MyCrafts" />
+                <asp:Button runat="server" ID="btnMyTab" Text="My Crafts" CssClass="nav-btn" OnClick="SwitchTab" CommandArgument="MyCrafts" />
             </asp:PlaceHolder>
 
             <asp:PlaceHolder ID="phAdminMenu" runat="server" Visible="false">

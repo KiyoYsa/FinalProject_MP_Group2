@@ -9,22 +9,18 @@ namespace FinalProject_Mockup_Group2
 {
     public partial class Dashboard : System.Web.UI.Page
     {
-        // Connection string from Web.config
         string connStr = ConfigurationManager.ConnectionStrings["DreamweaversDB"].ConnectionString;
 
         protected void Page_Load(object sender, EventArgs e)
         {
-            // Security Check
             if (Session["UserID"] == null) Response.Redirect("UserLogin.aspx");
 
-            // Role-based Access Control
             bool isAdmin = Session["Role"] != null && Session["Role"].ToString() == "Admin";
             phAdminMenu.Visible = isAdmin;
             phArtisanMenu.Visible = !isAdmin;
 
             if (!IsPostBack)
             {
-                // Default Tab: Admins see all Crafts, Artisans see their own
                 ViewState["ActiveTab"] = isAdmin ? "Crafts" : "MyCrafts";
                 LoadAllDropdowns();
                 BindData();
@@ -36,7 +32,6 @@ namespace FinalProject_Mockup_Group2
             string tab = ViewState["ActiveTab"].ToString();
             litTabHeader.Text = tab;
 
-            // 1. Setup View and Labels
             string label = "Item";
             switch (tab)
             {
@@ -49,7 +44,6 @@ namespace FinalProject_Mockup_Group2
             }
             litAddLabel.Text = label;
 
-            // 2. Fetch Data
             string sql = (tab == "MyCrafts")
                 ? "SELECT CraftID, CraftName, CraftDesc, CategoryID, PatternID FROM Crafts WHERE ArtisanID = @aid"
                 : $"SELECT * FROM {tab}";
@@ -63,7 +57,6 @@ namespace FinalProject_Mockup_Group2
                 DataTable dt = new DataTable();
                 da.Fill(dt);
 
-                // Set Primary Key for Editing/Deleting
                 if (dt.Columns.Count > 0)
                     gvPortal.DataKeyNames = new string[] { dt.Columns[0].ColumnName };
 
@@ -71,8 +64,6 @@ namespace FinalProject_Mockup_Group2
                 gvPortal.DataBind();
             }
         }
-
-        // --- INSERT LOGIC ---
 
         protected void btnAddCraft_Click(object sender, EventArgs e)
         {
@@ -104,7 +95,6 @@ namespace FinalProject_Mockup_Group2
 
         protected void btnAddUser_Click(object sender, EventArgs e)
         {
-            // We explicitly pass NULL for ArtisanID so it doesn't conflict
             ExecuteInsert("INSERT INTO Users (Username, Password, [Role], ArtisanID) VALUES (@v1, @v2, @v3, NULL)",
                 txtUName.Text, txtUPass.Text, ddlURole.SelectedValue, null);
 
@@ -117,7 +107,6 @@ namespace FinalProject_Mockup_Group2
             {
                 SqlCommand cmd = new SqlCommand(sql, conn);
 
-                // Use SqlParameters properly to handle NULLs safely
                 cmd.Parameters.Add("@v1", SqlDbType.NVarChar).Value = (object)v1 ?? DBNull.Value;
                 cmd.Parameters.Add("@v2", SqlDbType.NVarChar).Value = (object)v2 ?? DBNull.Value;
 
@@ -127,7 +116,6 @@ namespace FinalProject_Mockup_Group2
                 if (sql.Contains("@v4"))
                     cmd.Parameters.Add("@v4", SqlDbType.NVarChar).Value = (object)v4 ?? DBNull.Value;
 
-                // Only add @aid if the SQL string actually needs it (e.g., adding Crafts)
                 if (sql.Contains("@aid"))
                 {
                     if (Session["ArtisanID"] != null)
@@ -141,8 +129,6 @@ namespace FinalProject_Mockup_Group2
             }
             BindData();
         }
-
-        // --- GRIDVIEW ACTIONS ---
 
         protected void gvPortal_RowEditing(object sender, GridViewEditEventArgs e)
         {
@@ -159,55 +145,38 @@ namespace FinalProject_Mockup_Group2
         protected void gvPortal_RowUpdating(object sender, GridViewUpdateEventArgs e)
         {
             string tab = ViewState["ActiveTab"].ToString();
+            string targetTable = (tab == "MyCrafts") ? "Crafts" : tab;
+
             string idValue = gvPortal.DataKeys[e.RowIndex].Value.ToString();
             string idColumn = gvPortal.DataKeyNames[0];
 
             using (SqlConnection conn = new SqlConnection(connStr))
             {
-                SqlDataAdapter da = new SqlDataAdapter($"SELECT TOP 1 * FROM {tab}", conn);
-                DataTable schemaTable = new DataTable();
-                da.Fill(schemaTable);
-
-                string updateSql = $"UPDATE [{tab}] SET ";
+                string updateSql = $"UPDATE [{targetTable}] SET ";
                 SqlCommand cmd = new SqlCommand();
                 int paramCounter = 1;
 
-                for (int i = 0; i < schemaTable.Columns.Count; i++)
+                for (int i = 1; i < gvPortal.Rows[e.RowIndex].Cells.Count; i++)
                 {
-                    string colName = schemaTable.Columns[i].ColumnName;
+                    string colName = gvPortal.HeaderRow.Cells[i].Text;
 
-                    // 1. SKIP Primary Keys and System Timestamps
                     if (colName.Equals(idColumn, StringComparison.OrdinalIgnoreCase) ||
                         colName.Equals("CreatedAt", StringComparison.OrdinalIgnoreCase) ||
-                        colName.Equals("DateJoined", StringComparison.OrdinalIgnoreCase))
+                        colName.Equals("DateJoined", StringComparison.OrdinalIgnoreCase) ||
+                        string.IsNullOrEmpty(colName))
                     {
                         continue;
                     }
 
-                    // 2. SKIP Foreign Keys during manual grid edit to prevent Constraint Conflicts
-                    // These should be managed via specific logic or DropDowns, not TextBoxes.
-                    if (colName.Equals("ArtisanID", StringComparison.OrdinalIgnoreCase) ||
-                        colName.Equals("CategoryID", StringComparison.OrdinalIgnoreCase) ||
-                        colName.Equals("PatternID", StringComparison.OrdinalIgnoreCase))
+                    if (gvPortal.Rows[e.RowIndex].Cells[i].Controls.Count > 0)
                     {
-                        continue;
-                    }
-
-                    // 3. SKIP Image paths (usually handled via FileUpload, not TextBox)
-                    if (colName.Contains("Image") || colName.Equals("Thumbnail", StringComparison.OrdinalIgnoreCase))
-                    {
-                        continue;
-                    }
-
-                    // Get value from GridView TextBox
-                    Control ctrl = gvPortal.Rows[e.RowIndex].Cells[i + 1].Controls[0];
-                    string newValue = (ctrl is TextBox) ? ((TextBox)ctrl).Text : null;
-
-                    if (newValue != null)
-                    {
-                        updateSql += $"[{colName}] = @p{paramCounter}, ";
-                        cmd.Parameters.AddWithValue($"@p{paramCounter}", (object)newValue ?? DBNull.Value);
-                        paramCounter++;
+                        Control ctrl = gvPortal.Rows[e.RowIndex].Cells[i].Controls[0];
+                        if (ctrl is TextBox txt)
+                        {
+                            updateSql += $"[{colName}] = @p{paramCounter}, ";
+                            cmd.Parameters.AddWithValue($"@p{paramCounter}", string.IsNullOrEmpty(txt.Text) ? DBNull.Value : (object)txt.Text.Trim());
+                            paramCounter++;
+                        }
                     }
                 }
 
@@ -216,17 +185,8 @@ namespace FinalProject_Mockup_Group2
                 cmd.CommandText = updateSql;
                 cmd.Connection = conn;
 
-                try
-                {
-                    conn.Open();
-                    cmd.ExecuteNonQuery();
-                }
-                catch (SqlException ex)
-                {
-                    // Optional: Log error or show a message to the user
-                    // Response.Write("<script>alert('Update failed: " + ex.Message.Replace("'", "") + "');</script>");
-                    throw ex;
-                }
+                conn.Open();
+                cmd.ExecuteNonQuery();
             }
 
             gvPortal.EditIndex = -1;
@@ -236,20 +196,20 @@ namespace FinalProject_Mockup_Group2
         protected void gvPortal_RowDeleting(object sender, GridViewDeleteEventArgs e)
         {
             string tab = ViewState["ActiveTab"].ToString();
+            string targetTable = (tab == "MyCrafts") ? "Crafts" : tab;
+
             string idValue = gvPortal.DataKeys[e.RowIndex].Value.ToString();
             string idColumn = gvPortal.DataKeyNames[0];
 
             using (SqlConnection conn = new SqlConnection(connStr))
             {
-                SqlCommand cmd = new SqlCommand($"DELETE FROM {tab} WHERE {idColumn} = @id", conn);
+                SqlCommand cmd = new SqlCommand($"DELETE FROM [{targetTable}] WHERE [{idColumn}] = @id", conn);
                 cmd.Parameters.AddWithValue("@id", idValue);
                 conn.Open();
                 cmd.ExecuteNonQuery();
             }
             BindData();
         }
-
-        // --- NAVIGATION & DROPDOWNS ---
 
         private void LoadAllDropdowns()
         {
