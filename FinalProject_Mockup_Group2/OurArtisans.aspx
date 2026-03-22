@@ -6,8 +6,8 @@
             <div class="page-header-section">
                 <h1>OUR ARTISANS</h1>
                     <p> 
-                        The Our Artisans page introduces the talented T’boli artisans behind the products featured on this website. It highlights their craftsmanship, cultural traditions, and their role in preserving the heritage of the T’boli community. Through their stories and traditional practices, visitors can learn more about the people and cultural values behind each handcrafted piece. 
-                </p>
+                        Honoring the hands that weave the soul of the T’boli into the fabric of the future. Meet the artisans who turn sacred traditions into living art.
+                    </p>
             </div>
 
             <div class="artisan-divider"></div>
