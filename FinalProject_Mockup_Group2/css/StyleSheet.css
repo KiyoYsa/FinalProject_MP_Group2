@@ -291,7 +291,7 @@ section {
 .home-about-section {
     padding: 80px 15%;
     text-align: center;
-    background: #FDFCF8;
+    background: #FDF6E3;
 }
 
 .home-section-title {
@@ -806,12 +806,10 @@ section {
     width: 100%;
     margin: 75px 0px;
     padding: 50px 50px;
-    background: white;
-    align-items:center;
+    background: #FDF6E3;
+    align-items: center;
     display: flex;
     flex-direction: column;
-    
-    
 }
 
 
@@ -914,7 +912,7 @@ section {
 .our-artisans-page .our-artisans {
     width: 100%;
     text-align: center;
-    background-color: #fff;
+    background-color: #FDF6E3;
     padding: 0;
 }
 
@@ -927,7 +925,7 @@ section {
     padding: 0px 40px;
     margin: 80px auto;
     flex-wrap: wrap;
-    background-color: #fff;
+    background-color: #FDF6E3;
 }
 
     .our-artisans-page .artisan-wrapper.reverse {
