@@ -72,4 +72,40 @@
             parallax.style.transform = `translateY(${scrollPos * 0.5}px)`;
         });
     </script>
+
+    <hr class="section-divider" />
+
+    <section class="achievements-section">
+    <h2 class="home-section-title">Legacy & Recognition</h2>
+    <p>The T'boli Dreamweavers and their craft have gained recognition both locally and internationally, honoring their role in preserving Filipino cultural heritage.</p>
+
+    <div class="home-grid-container">
+
+        <div class="achievement-card">
+            <img src="images/gamaba.jpg" alt="GAMABA Award">
+            <h3>GAMABA Recognition</h3>
+            <p>Master weaver Lang Dulay was awarded the Gawad Manlilikha ng Bayan (National Living Treasure), recognizing her mastery of T’nalak weaving.</p>
+        </div>
+
+        <div class="achievement-card">
+            <img src="images/unesco.jpg" alt="UNESCO">
+            <h3>Cultural Heritage</h3>
+            <p>T’nalak weaving is recognized as an important part of intangible cultural heritage, preserving indigenous identity and traditions.</p>
+        </div>
+
+        <div class="achievement-card">
+            <img src="images/festivals.jpg" alt="Festival">
+            <h3>Cultural Festivals</h3>
+            <p>The community participates in events like the T’nalak Festival, showcasing their artistry and traditions.</p>
+        </div>
+
+        <div class="achievement-card">
+            <img src="images/global.jpg" alt="Global Recognition">
+            <h3>Global Recognition</h3>
+            <p>T’boli crafts have reached international audiences, admired for their intricate patterns and deep cultural meaning.</p>
+        </div>
+
+    </div>
+</section>
+
 </asp:Content>

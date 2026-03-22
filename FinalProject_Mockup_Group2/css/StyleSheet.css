@@ -217,6 +217,53 @@ footer {
     color: white;
 }
 
+/* ACHIEVEMENTS SECTION */
+.achievements-section {
+    text-align: center; 
+}
+
+    .achievements-section .home-section-title {
+        color: #D4AF37;
+        margin-bottom: 10px;
+    }
+
+    .achievements-section p {
+        color: #333;
+        max-width: 800px;
+        margin: 0 auto 40px auto; 
+        line-height: 1.4;
+    }
+.achievement-card {
+    background: white;
+    padding: 15px;
+    border-radius: 15px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; 
+    height: 400px; 
+}
+
+    .achievement-card img {
+        width: 100%;
+        border-radius: 10px;
+        object-fit: cover;
+        height: 200px; 
+        margin-bottom: 10px; 
+    }
+
+    .achievement-card h3 {
+        color: #D4AF37;
+        margin: 5px 0; 
+    }
+
+    .achievement-card p {
+        color: #555;
+        font-size: 0.95rem;
+        line-height: 1.3;
+    }
+
+
 /*CURLTURAL HERITAGE AND HOME CARD STYLE*/
 section {
     padding: 80px 10%;
@@ -254,6 +301,14 @@ section {
     text-transform: uppercase;
     letter-spacing: 2px;
     margin-bottom: 30px;
+}
+
+.section-divider {
+    width: 80%;
+    height: 2px;
+    background: linear-gradient(to right, transparent, #BD8232, transparent);
+    margin: 60px auto;
+    border: none;
 }
 
 
