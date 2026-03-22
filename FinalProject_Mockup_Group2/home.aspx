@@ -3,7 +3,9 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
 
     <section class="page-header-section">
-        <img src="images/mainpic.jpg" alt="T'boli Craftsmanship" class="home-hero-img">
+        <div class ="home-hero-img-container" style="left: -50px; top: -55px; width: 106%">
+            <img src="images/main (2).jpg" alt="T'boli Craftsmanship" class="home-hero-img" style="float: left; left: -278px; top: -6px; width: 121%; margin-top: 0">
+        </div>
         <h1 style="font-family: 'Garamond', 'Georgia', sans-serif;">Preserving Culture Through Craft</h1>
         <p>
             Discover handcrafted works created by the T'boli Indigenous artisan community. 
@@ -25,28 +27,30 @@
         <div class="home-grid-container">
             
             <div class="home-grid-card">
+                
                 <img src="images/artisan.jpg" alt="Artisan">
+                
                 <h3 style="font-size: 1.2rem;">Our Artisans</h3>
                 <p>Meet the creators and hear their stories.</p>
                 <div style="padding: 0 20px 20px;"><a href="OurArtisans.aspx" class="btn-read">Meet Artisans</a></div>
             </div>
 
             <div class="home-grid-card">
-                <img src="images/craft.jpg" alt="Craft">
+                <img src="images/crafts.jpg" alt="Craft">
                 <h3 style="font-size: 1.2rem;">Crafts + Shop</h3>
                 <p>Discover traditional T'nalak weaving.</p>
                 <div style="padding: 0 20px 20px;"><a href="shop.aspx" class="btn-read">Discover Crafts</a></div>
             </div>
 
             <div class="home-grid-card">
-                <img src="images/heritage.jpg" alt="Heritage">
+                <img src="images/culture.jpg" alt="Heritage">
                 <h3 style="font-size: 1.2rem;">Cultural Heritage</h3>
                 <p>Learn the meaning behind the designs.</p>
                 <div style="padding: 0 20px 20px;"><a href="CulturalHeritage.aspx" class="btn-read">Learn More</a></div>
             </div>
 
             <div class="home-grid-card">
-                <img src="images/story.jpg" alt="Stories">
+                <img src="images/stories.jpg" alt="Stories">
                 <h3 style="font-size: 1.2rem;">Stories</h3>
                 <p>Read oral histories from the Lake Sebu elders.</p>
                 <div style="padding: 0 20px 20px;"><a href="Stories.aspx" class="btn-read">Read Stories</a></div>

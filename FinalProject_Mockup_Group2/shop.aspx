@@ -8,33 +8,20 @@
         
     </div>
 
-    <div class="carousel">
-        <div class="slides">
-            <img class="slide" alt="pic" src="images/pic1.png" />
-            <img class="slide" alt="pic" src="images/pic2.png" />
-            <img class="slide" alt="pic" src="images/pic3.png" />
-     </div>
-
-    <button type="button" class="prev" onclick="prevSlide()">❮</button>
-    <button type="button" class="next" onclick="nextSlide()">❯</button>
-
-    </div>
-    
-    <br>
     <section>
-        <h2 style="font-size: 32px; color: #7B160E; text-align: center; letter-spacing: 4px; margin-bottom: 30px;">HANDWOVEN TREASURES</h2>
-        <p style="font-size: 18px; color: #1A1A1A; text-align: center";>
+        <h2 style="font-size: 32px; color: #7B160E; letter-spacing: 4px; margin-bottom: 30px;" class="auto-style1">HANDWOVEN TREASURES</h2>
+        <p style="font-size: 18px; color: #1A1A1A; "; class="auto-style1">
             Each piece is meticulously handwoven by the T’boli, blending traditional artistry with timeless elegance.
         </p>
     </section>
             
     <div class="auto-style1" style="gap:25px;">
-        <button type="button" class="btn-read">All</button>
-        <button type="button" class="btn-read">Cloth</button>
-        <button type="button" class="btn-read">Malong</button>
-        <button type="button" class="btn-read">Clothing</button>
-        <button type="button" class="btn-read">Bags</button>
-        <button type="button" class="btn-read">Home</button>
+        <button type="button" class="btn-read" data-filter="all">All</button>
+        <button type="button" class="btn-read" data-filter="cloth">Cloth</button>
+        <button type="button" class="btn-read" data-filter="malong">Malong</button>
+        <button type="button" class="btn-read" data-filter="clothing">Clothing</button>
+        <button type="button" class="btn-read" data-filter="bags">Bags</button>
+        <button type="button" class="btn-read" data-filter="home">Home</button>
     </div>
         
         
@@ -43,16 +30,16 @@
 
 <div class="prod">
     <div class="prod_box">
-        <div class="prod_card">
+        <div class="prod_card" data-category="cloth">
 
             <div class="prod_image">
-                <img src="https://www.tnalakhome.com/wp-content/uploads/2020/12/tinalak_traditional_print2.png" alt="Tinalak Traditional Print">
+                <img src="images/red cloth.png" alt="Tinalak Traditional Print">
             </div>
 
             <div class="prod_info">
-                <h3>Bed Klagan Dark Red</h3>
-                <p>handwoven T’nalak in dark red.</p>
-                <span class="status available">Status: Available</span>
+                <h2>Bed Klagan Dark Red</h2>
+                <h3>handwoven T’nalak in dark red.</h3>
+                <p><span class="status available">Status: Available</span></p>
                 <div class="contact_info">
                     <p><strong>Artisan / Center:</strong> Lang Dulay Weaving Center</p>
                     <p><strong>Email:</strong> artisan@example.com</p>
@@ -63,16 +50,16 @@
 
         </div>
 
-        <div class="prod_card">
+        <div class="prod_card" data-category="cloth">
 
             <div class="prod_image">
-                <img src="https://www.tnalakhome.com/wp-content/uploads/2020/12/tinalak_traditional_print4-.png" alt="Tinalak Traditional Print">
+                <img src="images/blue cloth.png" alt="Tinalak Traditional Print">
             </div>
 
             <div class="prod_info">
-                <h3>Bed Duon Blata Dark Blue/Light Blue/Natural</h3>
-                <p>handwoven T’nalak in light and dark blue.</p>
-                <span class="status available">Status: Available</span>
+                <h2>Bed Duon Blata Dark Blue/Light Blue/Natural</h2>
+                <h3>handwoven T’nalak in light and dark blue.</h3>
+                <p><span class="status available">Status: Available</span></p>
                 <div class="contact_info">
                     <p><strong>Artisan / Center:</strong> Lang Dulay Weaving Center</p>
                     <p><strong>Email:</strong> artisan@example.com</p>
@@ -83,16 +70,16 @@
 
         </div>
 
-<div class="prod_card">
+<div class="prod_card" data-category="cloth">
 
     <div class="prod_image">
-        <img src="https://www.tnalakhome.com/wp-content/uploads/2020/12/tinalak_traditional_print6-.png" alt="Tinalak Traditional Print">
+        <img src="images/brown cloth.png" alt="Tinalak Traditional Print">
     </div>
 
     <div class="prod_info">
-        <h3>Bed Duon Blata Dark Rust</h3>
-        <p>handwoven T’nalak in light and dark rust.</p>
-        <span class="status available">Status: Available</span>
+        <h2>Bed Duon Blata Dark Rust</h2>
+        <h3>handwoven T’nalak in light and dark rust.</h3>
+        <p><span class="status available">Status: Available</span></p>
         <div class="contact_info">
             <p><strong>Artisan / Center:</strong> Lang Dulay Weaving Center</p>
             <p><strong>Email:</strong> artisan@example.com</p>
@@ -103,16 +90,16 @@
 
 </div>
 
-        <div class="prod_card">
+        <div class="prod_card" data-category="cloth">
 
     <div class="prod_image">
-        <img src="https://www.tnalakhome.com/wp-content/uploads/2020/12/tinalak_traditional_print7.png" alt="Tinalak Traditional Print">
+        <img src="images/yellow cloth.png" alt="Tinalak Traditional Print">
     </div>
 
     <div class="prod_info">
-        <h3>Bed Klagan Dark Yellow/Light Yellow/Natural</h3>
-        <p>handwoven T’nalak in light and dark yellow.</p>
-        <span class="status available">Status: Available</span>
+        <h2>Bed Klagan Dark Yellow/Light Yellow/Natural</h2>
+        <h3>handwoven T’nalak in light and dark yellow.</h3>
+        <p><span class="status available">Status: Available</span></p>
         <div class="contact_info">
             <p><strong>Artisan / Center:</strong> Lang Dulay Weaving Center</p>
             <p><strong>Email:</strong> artisan@example.com</p>
@@ -123,16 +110,16 @@
 
 </div>
 
-        <div class="prod_card">
+        <div class="prod_card" data-category="malong">
 
     <div class="prod_image">
-        <img src="https://narrastudio.com/cdn/shop/files/DSCF8477.jpg?v=1772860763&width=750" alt="Tnalak Malong">
+        <img src="images/black malong.png" alt="Tnalak Malong">
     </div>
 
     <div class="prod_info">
-        <h3>Handwoven Malong - Black and Gold</h3>
-        <p>A traditional woven garment in black and gold.</p>
-        <span class="status available">Status: Available</span>
+        <h2>Handwoven Malong - Black and Gold</h2>
+        <h3>A traditional woven garment in black and gold.</h3>
+        <p><span class="status available">Status: Available</span></p>
         <div class="contact_info">
             <p><strong>Artisan / Center:</strong> Lang Dulay Weaving Center</p>
             <p><strong>Email:</strong> artisan@example.com</p>
@@ -143,16 +130,16 @@
 
 </div>
 
-        <div class="prod_card">
+        <div class="prod_card" data-category="malong">
 
     <div class="prod_image">
-        <img src="https://narrastudio.com/cdn/shop/files/DSCF8527.jpg?v=1772775577&width=750" alt="Tnalak Malong">
+        <img src="images/pink malong.png" alt="Tnalak Malong">
     </div>
 
     <div class="prod_info">
-        <h3>Handwoven Malong - Gold and Fuchsia</h3>
-        <p>A traditional woven garment in gold and fuchsia.</p>
-        <span class="status available">Status: Available</span>
+        <h2>Handwoven Malong - Gold and Fuchsia</h2>
+        <h3>A traditional woven garment in gold and fuchsia.</h3>
+        <p><span class="status available">Status: Available</span></p>
         <div class="contact_info">
             <p><strong>Artisan / Center:</strong> Lang Dulay Weaving Center</p>
             <p><strong>Email:</strong> artisan@example.com</p>
@@ -163,16 +150,16 @@
 
 </div>
 
-        <div class="prod_card">
+        <div class="prod_card" data-category="malong">
 
     <div class="prod_image">
-        <img src="https://narrastudio.com/cdn/shop/files/DSCF8408.jpg?v=1772860900&width=750" alt="Tnalak Malong">
+        <img src="images/purple malong.png" alt="Tnalak Malong">
     </div>
 
     <div class="prod_info">
-        <h3>Handwoven Malong - Purple</h3>
-        <p>A traditional woven garment in purple.</p>
-        <span class="status available">Status: Available</span>
+        <h2>Handwoven Malong - Purple</h2>
+        <h3>A traditional woven garment in purple.</h3>
+        <p><span class="status available">Status: Available</span></p>
         <div class="contact_info">
             <p><strong>Artisan / Center:</strong> Lang Dulay Weaving Center</p>
             <p><strong>Email:</strong> artisan@example.com</p>
@@ -183,16 +170,16 @@
 
 </div>
 
-        <div class="prod_card">
+        <div class="prod_card" data-category="malong">
 
     <div class="prod_image">
-       <img src="https://narrastudio.com/cdn/shop/files/DSCF8434.jpg?v=1772860874&width=750" alt="Tnalak Malong">
+       <img src="images/yellow malong.png" alt="Tnalak Malong">
     </div>
 
     <div class="prod_info">
-        <h3>Handwoven Malong - Golden Orange</h3>
-        <p>A traditional woven garment in golden orange.</p>
-        <span class="status available">Status: Available</span>
+        <h2>Handwoven Malong - Golden Orange</h2>
+        <h3>A traditional woven garment in golden orange.</h3>
+        <p><span class="status available">Status: Available</span><p>
         <div class="contact_info">
             <p><strong>Artisan / Center:</strong> Lang Dulay Weaving Center</p>
             <p><strong>Email:</strong> artisan@example.com</p>
@@ -203,16 +190,16 @@
 
 </div>
 
-        <div class="prod_card">
+        <div class="prod_card" data-category="clothing">
 
     <div class="prod_image">
-        <img src="https://pinas-sadya.com/cdn/shop/files/Pinas_Sadya_0547_2_0e448b5b-d36f-4e96-9765-cfb503510538.jpg?v=1745384929&width=823" alt="Tnalak clothing">
+        <img src="images/poncho.png" alt="Tnalak clothing">
     </div>
 
     <div class="prod_info">
-        <h3>Heritage Poncho</h3>
-        <p>Cotton T’nalak poncho from Cotabato with traditional Filipino patterns.</p>
-        <span class="status available">Status: Available</span>
+        <h2>Heritage Poncho</h2>
+        <h3>Cotton T’nalak poncho from Cotabato with traditional Filipino patterns.</h3>
+        <p><span class="status available">Status: Available</span></p>
         <div class="contact_info">
             <p><strong>Artisan / Center:</strong> Lang Dulay Weaving Center</p>
             <p><strong>Email:</strong> artisan@example.com</p>
@@ -223,16 +210,16 @@
 
 </div>
 
-        <div class="prod_card">
+        <div class="prod_card" data-category="clothing">
 
     <div class="prod_image">
-        <img src="https://pinas-sadya.com/cdn/shop/files/012-8461.jpg?v=1756951948&width=823" alt="Tnalak clothing">
+        <img src="images/bib1.png" alt="Tnalak clothing">
     </div>
 
     <div class="prod_info">
-        <h3>Oldrose Top in Tnalak Cotton</h3>
-        <p>Cotton T’nalak top in old rose with traditional Filipino patterns, soft and practical for everyday wear.</p>
-        <span class="status available">Status: Available</span>
+        <h2>Oldrose Top in Tnalak Cotton</h2>
+        <h3>Cotton T’nalak top in old rose with traditional Filipino patterns, soft and practical for everyday wear.</h3>
+        <p><span class="status available">Status: Available</span></p>
         <div class="contact_info">
             <p><strong>Artisan / Center:</strong> Lang Dulay Weaving Center</p>
             <p><strong>Email:</strong> artisan@example.com</p>
@@ -242,16 +229,16 @@
     <a href="mailto:artisan@example.com?subject=Inquiry%20about%20Scarf" class="contact_btn"> Contact Us</a>
 
 </div>
-<div class="prod_card">
+<div class="prod_card" data-category="clothing">
 
     <div class="prod_image">
-        <img src="https://pinas-sadya.com/cdn/shop/files/1_595dae4d-7852-4fe3-b23d-4e9cfee38203.jpg?v=1720965887&width=823" alt="Tnalak clothing">
+        <img src="images/dress.png" alt="Tnalak clothing">
     </div>
 
     <div class="prod_info">
-        <h3>Modern Filipiniana Black Tnalak </h3>
-        <p>T’nalak wrap-around top in gray and off-white stripes made from premium abaca, combining heritage and style.</p>
-        <span class="status available">Status: Available</span>
+        <h2>Modern Filipiniana Black Tnalak </h2>
+        <h3>T’nalak wrap-around top in gray and off-white stripes made from premium abaca, combining heritage and style.</h3>
+        <p><span class="status available">Status: Available</span></p>
         <div class="contact_info">
             <p><strong>Artisan / Center:</strong> Lang Dulay Weaving Center</p>
             <p><strong>Email:</strong> artisan@example.com</p>
@@ -261,16 +248,16 @@
     <a href="mailto:artisan@example.com?subject=Inquiry%20about%20Scarf" class="contact_btn"> Contact Us</a>
 
 </div>
-<div class="prod_card">
+<div class="prod_card" data-category="bags"> 
 
     <div class="prod_image">
-        <img src="https://pinas-sadya.com/cdn/shop/files/012-7582.jpg?v=1756965973&width=823" alt="Tnalak bag">
+        <img src="images/bag1.png" alt="Tnalak bag">
     </div>
 
     <div class="prod_info">
-        <h3>Tnalak Tote Bag with Kalinga Straps</h3>
-        <p>T’nalak tote bag with Kalinga-style straps, combining traditional Filipino design with everyday functionality.</p>
-        <span class="status available">Status: Available</span>
+        <h2>Tnalak Tote Bag with Kalinga Straps</h2>
+        <h3>T’nalak tote bag with Kalinga-style straps, combining traditional Filipino design with everyday functionality.</h3>
+        <p><span class="status available">Status: Available</span></p>
         <div class="contact_info">
             <p><strong>Artisan / Center:</strong> Lang Dulay Weaving Center</p>
             <p><strong>Email:</strong> artisan@example.com</p>
@@ -281,16 +268,16 @@
 
 </div>
 
-        <div class="prod_card">
+        <div class="prod_card" data-category="bags">
 
     <div class="prod_image">
-        <img src="https://pinas-sadya.com/cdn/shop/files/012-7536.jpg?v=1756966070&width=823" alt="Tnalak bag">
+        <img src="images/bag2.png" alt="Tnalak bag">
     </div>
 
         <div class="prod_info">
-            <h3>Manila Tote Bag with Black Tnalak</h3>
-            <p>T’nalak tote bag inspired by Sipa Takraw and banig, with an interchangeable flap and versatile design for everyday use.</p>
-            <span class="status available">Status: Available</span>
+            <h2>Manila Tote Bag with Black Tnalak</h2>
+            <h3>T’nalak tote bag inspired by Sipa Takraw and banig, with an interchangeable flap and versatile design for everyday use.</h3>
+            <p><span class="status available">Status: Available</span></p>
             <div class="contact_info">
                 <p><strong>Artisan / Center:</strong> Lang Dulay Weaving Center</p>
                 <p><strong>Email:</strong> artisan@example.com</p>
@@ -301,16 +288,16 @@
 
     </div>
 
-            <div class="prod_card">
+            <div class="prod_card" data-category="bags">
 
         <div class="prod_image">
-            <img src="https://pinas-sadya.com/cdn/shop/files/672A6117_1.jpg?v=1707394636&width=823" alt="Tnalak bag">
+            <img src="images/bag3.png" alt="Tnalak bag">
         </div>
 
             <div class="prod_info">
-                <h3>Kalinga Tote Bag in Bagobo Tnalak Weave</h3>
-                <p>T’nalak bag with a Langkit handle, paired with black denim canvas and blue stripes in earthy tones.</p>
-                <span class="status available">Status: Available</span>
+                <h2>Kalinga Tote Bag in Bagobo Tnalak Weave</h2>
+                <h3>T’nalak bag with a Langkit handle, paired with black denim canvas and blue stripes in earthy tones.</h3>
+                <p><span class="status available">Status: Available</span></p>
                 <div class="contact_info">
                     <p><strong>Artisan / Center:</strong> Lang Dulay Weaving Center</p>
                     <p><strong>Email:</strong> artisan@example.com</p>
@@ -321,16 +308,16 @@
 
         </div>
 
-    <div class="prod_card">
+    <div class="prod_card" data-category="home">
 
 <div class="prod_image">
-    <img src="https://www.tnalakhome.com/wp-content/uploads/2020/12/CUSHION-RIVER-DESIGN.png" alt="Tnalak home">
+    <img src="images/red pillow.png" alt="Tnalak home">
 </div>
 
     <div class="prod_info">
-        <h3>Cushion River Design Pillowcase</h3>
-        <p>T’nalak River Design cushion cover, blending traditional patterns with modern style.</p>
-        <span class="status available">Status: Available</span>
+        <h2>Cushion River Design Pillowcase</h2>
+        <h3>T’nalak River Design cushion cover, blending traditional patterns with modern style.</h3>
+        <p><span class="status available">Status: Available</span></p>
         <div class="contact_info">
             <p><strong>Artisan / Center:</strong> Lang Dulay Weaving Center</p>
             <p><strong>Email:</strong> artisan@example.com</p>
@@ -342,16 +329,16 @@
     </div>
 
 
-    <div class="prod_card">
+    <div class="prod_card" data-category="home">
 
 <div class="prod_image">
-    <img src="https://www.tnalakhome.com/wp-content/uploads/2020/12/Cushion-Cover-maranao-Crown-Light-Grey-with-black-coco.png" alt="Tnalak home">
+    <img src="images/white pillow.png" alt="Tnalak home">
 </div>
 
     <div class="prod_info">
-        <h3>Maranao Crown Light Grey with Black Coco</h3>
-        <p>T’nalak Maranao Crown cushion cover in light grey with black coco accents.</p>
-        <span class="status available">Status: Available</span>
+        <h2>Maranao Crown Light Grey with Black Coco</h2>
+        <h3>T’nalak Maranao Crown cushion cover in light grey with black coco accents.</h3>
+        <p><span class="status available">Status: Available</span></p>
         <div class="contact_info">
             <p><strong>Artisan / Center:</strong> Lang Dulay Weaving Center</p>
             <p><strong>Email:</strong> artisan@example.com</p>
@@ -363,16 +350,16 @@
     </div>
 
 
-        <div class="prod_card">
+        <div class="prod_card" data-category="home">
 
     <div class="prod_image">
-        <img src="https://www.tnalakhome.com/wp-content/uploads/2020/12/stool-tnalak-ikat-blue.png" alt="Tnalak home">
+        <img src="images/blue chair.png" alt="Tnalak home">
     </div>
 
         <div class="prod_info">
-            <h3>Stool T’nalak Traditional Ikat Blue</h3>
-            <p>T’nalak stool with traditional Ikat pattern in blue.</p>
-            <span class="status available">Status: Available</span>
+            <h2>Stool T’nalak Traditional Ikat Blue</h2>
+            <h3>T’nalak stool with traditional Ikat pattern in blue.</h3>
+            <p><span class="status available">Status: Available</span></p>
             <div class="contact_info">
                 <p><strong>Artisan / Center:</strong> Lang Dulay Weaving Center</p>
                 <p><strong>Email:</strong> artisan@example.com</p>
@@ -383,16 +370,16 @@
 
         </div>
 
-        <div class="prod_card">
+        <div class="prod_card" data-category="home">
 
     <div class="prod_image">
-        <img src="https://www.tnalakhome.com/wp-content/uploads/2020/12/stool-tnalak-ikat-brown.png" alt="Tnalak home">
+        <img src="images/brown chair.png" alt="Tnalak home">
     </div>
 
         <div class="prod_info">
-            <h3>Stool T’nalak Traditional Ikat Brown</h3>
-            <p>T’nalak stool with traditional Ikat pattern in brown.</p>
-            <span class="status available">Status: Available</span>
+            <h2>Stool T’nalak Traditional Ikat Brown</h2>
+            <h3>T’nalak stool with traditional Ikat pattern in brown.</h3>
+            <p><span class="status available">Status: Available</span></p>
             <div class="contact_info">
                 <p><strong>Artisan / Center:</strong> Lang Dulay Weaving Center</p>
                 <p><strong>Email:</strong> artisan@example.com</p>
@@ -417,11 +404,6 @@
 
 
 
-
-
-
-
-    
     <script>
     let index = 0;
 
@@ -448,14 +430,36 @@
         showSlide();
         }
 
-        const buttons = document.querySelectorAll('.btn-read');
+
+    const buttons = document.querySelectorAll('.btn-read');
 
     buttons.forEach(button => {
         button.addEventListener('click', () => {
-            // Remove “active” from all buttons
             buttons.forEach(btn => btn.classList.remove('active'));
-            // Add “active” to the clicked button
             button.classList.add('active');
+        });
+    });
+
+
+    const filterButtons = document.querySelectorAll('.btn-read');
+    const cards = document.querySelectorAll('.prod_card');
+
+    filterButtons.forEach(btn => {
+        btn.addEventListener('click', () => {
+            const filter = btn.getAttribute('data-filter');
+
+            filterButtons.forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+
+            cards.forEach(card => {
+                if (filter === 'all') {
+                    card.style.display = 'flex'; 
+                } else if (card.dataset.category === filter) {
+                    card.style.display = 'flex';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
         });
     });
 
