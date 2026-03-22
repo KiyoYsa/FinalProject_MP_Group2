@@ -84,6 +84,23 @@ WHEN NOT MATCHED BY TARGET THEN
 WHEN NOT MATCHED BY SOURCE THEN
     DELETE;
 
+/* for categories db*/
+MERGE INTO Categories AS target
+USING (VALUES
+    ('All'),
+    ('Cloth'),
+    ('Malong'),
+    ('Clothing'),
+    ('Bags'),
+    ('Home')
+) AS source (CategoryName)
+ON target.CategoryName = source.CategoryName
+WHEN MATCHED THEN
+    UPDATE SET CategoryName = source.CategoryName
+WHEN NOT MATCHED THEN
+    INSERT (CategoryName)
+    VALUES (source.CategoryName);
+
 
 /* for users db*/
 SET IDENTITY_INSERT Users ON;
@@ -136,20 +153,3 @@ WHEN MATCHED THEN
 WHEN NOT MATCHED THEN
     INSERT (ArtisanID, PatternID, CategoryID, CraftName, CraftDesc, CraftDimension, [Status], Thumbnail)
     VALUES (source.ArtisanID, source.PatternID, source.CategoryID, source.CraftName, source.CraftDesc, source.CraftDimension, source.[Status], source.Thumbnail);
-
-/* for categories db*/
-MERGE INTO Categories AS target
-USING (VALUES
-    ('All'),
-    ('Cloth'),
-    ('Malong'),
-    ('Clothing'),
-    ('Bags'),
-    ('Home')
-) AS source (CategoryName)
-ON target.CategoryName = source.CategoryName
-WHEN MATCHED THEN
-    UPDATE SET CategoryName = source.CategoryName
-WHEN NOT MATCHED THEN
-    INSERT (CategoryName)
-    VALUES (source.CategoryName);
