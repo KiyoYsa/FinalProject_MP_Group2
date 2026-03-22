@@ -21,7 +21,7 @@ namespace FinalProject_Mockup_Group2
 
             using (SqlConnection conn = new SqlConnection(connStr))
             {
-                string query = "SELECT ArtisanName, ArtisanBio, ArtisanLocation, ProfileImageURL FROM Artisans";
+                string query = "SELECT ArtisanName, ArtisanBio, ArtisanLocation, ProfileImage FROM Artisans";
 
                 using (SqlCommand cmd = new SqlCommand(query, conn))
                 {

@@ -28,7 +28,7 @@
                         </div>
 
                         <div class="artisan-image-section">
-                            <img src='<%# Eval("ProfileImageURL") %>' />
+                            <img src='<%# Eval("ProfileImage") %>' />
                         </div>
 
                     </div>
