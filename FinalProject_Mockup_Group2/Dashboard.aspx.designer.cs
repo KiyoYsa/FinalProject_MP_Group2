@@ -159,13 +159,13 @@ namespace FinalProject_Mockup_Group2
         protected global::System.Web.UI.WebControls.TextBox txtABio;
 
         /// <summary>
-        /// txtALoc control.
+        /// txtALocation control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtALoc;
+        protected global::System.Web.UI.WebControls.TextBox txtALocation;
 
         /// <summary>
         /// btnadd1 control.
@@ -195,13 +195,22 @@ namespace FinalProject_Mockup_Group2
         protected global::System.Web.UI.WebControls.TextBox txtPName;
 
         /// <summary>
-        /// txtPSym control.
+        /// txtPSpiritual control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtPSym;
+        protected global::System.Web.UI.WebControls.TextBox txtPSpiritual;
+
+        /// <summary>
+        /// txtPHistory control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtPHistory;
 
         /// <summary>
         /// btnadd2 control.
@@ -211,6 +220,78 @@ namespace FinalProject_Mockup_Group2
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button btnadd2;
+
+        /// <summary>
+        /// vwAddCategory control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.View vwAddCategory;
+
+        /// <summary>
+        /// txtCatName control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtCatName;
+
+        /// <summary>
+        /// btnAddCat control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnAddCat;
+
+        /// <summary>
+        /// vwAddUser control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.View vwAddUser;
+
+        /// <summary>
+        /// txtUName control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtUName;
+
+        /// <summary>
+        /// txtUPass control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtUPass;
+
+        /// <summary>
+        /// ddlURole control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList ddlURole;
+
+        /// <summary>
+        /// btnAddUser control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnAddUser;
 
         /// <summary>
         /// gvPortal control.
