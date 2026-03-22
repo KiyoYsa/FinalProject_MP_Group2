@@ -199,5 +199,4 @@
     setInterval(updateAllCountdowns, 1000);
 
 </script>
-
 </asp:Content>

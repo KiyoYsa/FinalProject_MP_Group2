@@ -1,16 +1,4 @@
-﻿/*
-Post-Deployment Script Template							
---------------------------------------------------------------------------------------
- This file contains SQL statements that will be appended to the build script.		
- Use SQLCMD syntax to include a file in the post-deployment script.			
- Example:      :r .\myfile.sql								
- Use SQLCMD syntax to reference a variable in the post-deployment script.		
- Example:      :setvar TableName MyTable							
-               SELECT * FROM [$(TableName)]					
---------------------------------------------------------------------------------------
-*/
-
--- artisans db
+﻿-- artisans db
 SET IDENTITY_INSERT Artisans ON;
 
 MERGE INTO Artisans AS target
@@ -55,7 +43,6 @@ SET IDENTITY_INSERT Artisans OFF;
 
 
 -- patterns db
-
 MERGE INTO Patterns AS Target
 USING (VALUES 
     ('Kafi (Frog)', 
@@ -91,10 +78,10 @@ SET IDENTITY_INSERT Users ON;
 
 MERGE INTO Users AS target
 USING (VALUES
-    (1, 1, 'lang_dulay', 'TnalakMaster123', 'Admin'),      -- Lang Dulay (Admin/Legacy)
-    (2, 2, 'maria_todi', 'SLT_LakeSebu', 'Dreamweaver'),   -- Maria Oyog Todi
-    (3, 3, 'barbara_ofong', 'Dreamweaver90', 'Dreamweaver'),-- Barbara Kibed Ofong
-    (4, NULL, 'test_admin', 'TestAdmin', 'Admin')      -- Test Admin account
+    (1, 1, 'lang_dulay', 'TnalakMaster123', 'Admin'),
+    (2, 2, 'maria_todi', 'SLT_LakeSebu', 'Dreamweaver'),
+    (3, 3, 'barbara_ofong', 'Dreamweaver90', 'Dreamweaver'),
+    (4, NULL, 'test_admin', 'TestAdmin', 'Admin')
 ) AS source (UserID, ArtisanID, Username, [Password], [Role])
 
 ON target.UserID = source.UserID
@@ -115,6 +102,7 @@ WHEN NOT MATCHED BY SOURCE THEN
 
 SET IDENTITY_INSERT Users OFF;
 
+
 -- categories db
 MERGE INTO Categories AS Target
 USING (VALUES 
@@ -124,28 +112,24 @@ ON Target.CategoryID = Source.CategoryID
 WHEN NOT MATCHED THEN
     INSERT (CategoryName) VALUES (Source.CategoryName);
 
+
 -- crafts db
 MERGE INTO Crafts AS target
 USING (VALUES
--- CLOTH (CategoryID 1) - Artisan 1 (Lang Dulay), Pattern 1 (Kafi)
 (1, 1, 1, 'Bed Klagan Dark Red', 'Handwoven T’nalak in dark red.', 'https://www.tnalakhome.com/wp-content/uploads/2020/12/tinalak_traditional_print2.png'),
 (1, 1, 1, 'Bed Duon Blata Dark Blue/Light Blue/Natural', 'Handwoven T’nalak in light and dark blue.', 'https://www.tnalakhome.com/wp-content/uploads/2020/12/tinalak_traditional_print4-.png'),
 (1, 1, 1, 'Bed Duon Blata Dark Rust', 'Handwoven T’nalak in light and dark rust.', 'https://www.tnalakhome.com/wp-content/uploads/2020/12/tinalak_traditional_print6-.png'),
 
--- MALONG (CategoryID 2) - Artisan 2 (Maria Todi), Pattern 2 (Sigul)
 (2, 2, 2, 'Handwoven Malong - Black and Gold', 'Traditional woven garment in black and gold.', 'https://narrastudio.com/cdn/shop/files/DSCF8477.jpg?width=750'),
 (2, 2, 2, 'Handwoven Malong - Gold and Fuchsia', 'Traditional woven garment in gold and fuchsia.', 'https://narrastudio.com/cdn/shop/files/DSCF8527.jpg?width=750'),
 (2, 2, 2, 'Handwoven Malong - Purple', 'Traditional woven garment in purple.', 'https://narrastudio.com/cdn/shop/files/DSCF8408.jpg?width=750'),
 
--- CLOTHING (CategoryID 3) - Artisan 3 (Barbara Ofong), Pattern 3 (Kleng)
 (3, 3, 3, 'Heritage Poncho', 'Cotton T’nalak poncho from Cotabato with traditional Filipino patterns.', 'https://pinas-sadya.com/cdn/shop/files/Pinas_Sadya_0547_2.jpg?width=823'),
 (3, 3, 3, 'Oldrose Top in Tnalak Cotton', 'Cotton T’nalak top in old rose with traditional Filipino patterns.', 'https://pinas-sadya.com/cdn/shop/files/012-8461.jpg?width=823'),
 
--- BAGS (CategoryID 4) - Artisan 2 (Maria Todi)
 (2, 2, 4, 'Tnalak Tote Bag with Kalinga Straps', 'T’nalak tote bag with Kalinga-style straps.', 'https://pinas-sadya.com/cdn/shop/files/012-7582.jpg?width=823'),
 (2, 2, 4, 'Manila Tote Bag with Black Tnalak', 'T’nalak tote bag inspired by Filipino traditions.', 'https://pinas-sadya.com/cdn/shop/files/012-7536.jpg?width=823'),
 
--- HOME (CategoryID 5) - Artisan 1 (Lang Dulay)
 (1, 1, 5, 'Cushion River Design Pillowcase', 'T’nalak River Design cushion cover.', 'https://www.tnalakhome.com/wp-content/uploads/2020/12/CUSHION-RIVER-DESIGN.png'),
 (1, 1, 5, 'Stool T’nalak Traditional Ikat Blue', 'T’nalak stool with Ikat pattern in blue.', 'https://www.tnalakhome.com/wp-content/uploads/2020/12/stool-tnalak-ikat-blue.png')
 

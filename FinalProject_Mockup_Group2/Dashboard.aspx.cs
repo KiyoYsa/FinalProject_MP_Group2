@@ -30,7 +30,6 @@ namespace FinalProject_Mockup_Group2
         {
             string tab = ViewState["ActiveTab"].ToString();
             litTabHeader.Text = tab;
-            //litAddLabel.Text = (tab == "MyCrafts") ? "Craft" : tab.TrimEnd('s');
             string label;
 
             switch (tab)
@@ -61,7 +60,6 @@ namespace FinalProject_Mockup_Group2
             btnadd.Text = "Add " + label;
             btnadd2.Text = "Add " + label;
 
-            // Set the correct Add Form view
             if (tab == "Crafts" || tab == "MyCrafts") mvAddForms.SetActiveView(vwAddCraft);
             else if (tab == "Artisans") mvAddForms.SetActiveView(vwAddArtisan);
             else if (tab == "Patterns") mvAddForms.SetActiveView(vwAddPattern);
@@ -77,14 +75,12 @@ namespace FinalProject_Mockup_Group2
                 DataTable dt = new DataTable();
                 da.Fill(dt);
 
-                // Dynamically set Primary Key for Edit/Delete
                 gvPortal.DataKeyNames = new string[] { dt.Columns[0].ColumnName };
                 gvPortal.DataSource = dt;
                 gvPortal.DataBind();
             }
         }
 
-        // --- ADD ACTIONS ---
         protected void btnAddCraft_Click(object sender, EventArgs e)
         {
             ExecuteInsert("INSERT INTO Crafts (CraftName, CraftDesc, CategoryID, PatternID, ArtisanID, Status) VALUES (@v1, @v2, @v3, @v4, @aid, 'Active')",
@@ -114,10 +110,9 @@ namespace FinalProject_Mockup_Group2
                 if (sql.Contains("@aid")) cmd.Parameters.AddWithValue("@aid", Session["ArtisanID"] ?? 1);
                 conn.Open(); cmd.ExecuteNonQuery();
             }
-            BindData(); // Immediate Refresh
+            BindData();
         }
 
-        // --- INLINE EDITING ACTIONS ---
         protected void gvPortal_RowEditing(object sender, GridViewEditEventArgs e) { gvPortal.EditIndex = e.NewEditIndex; BindData(); }
         protected void gvPortal_RowCancelingEdit(object sender, GridViewCancelEditEventArgs e) { gvPortal.EditIndex = -1; BindData(); }
 
@@ -132,7 +127,6 @@ namespace FinalProject_Mockup_Group2
             {
                 string idCol = gvPortal.DataKeyNames[0];
                 string sql = $"UPDATE {tab} SET {gvPortal.Columns[1].HeaderText.Replace(" ", "")}=@v1, {gvPortal.Columns[2].HeaderText.Replace(" ", "")}=@v2 WHERE {idCol}=@id";
-                // Simplified Update - usually you'd use a Switch case for column names
                 SqlCommand cmd = new SqlCommand(sql, conn);
                 cmd.Parameters.AddWithValue("@v1", col1); cmd.Parameters.AddWithValue("@v2", col2);
                 cmd.Parameters.AddWithValue("@id", id);
