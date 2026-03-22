@@ -23,7 +23,7 @@
                             <br />
 
                             <div class="btn-read">
-                                <a href='CulturalHeritage.aspx'>Read More</a>
+                                <a href='Stories.aspx'>Read More</a>
                             </div>
                         </div>
 
