@@ -118,9 +118,9 @@ SET IDENTITY_INSERT Users OFF;
 MERGE INTO Crafts AS target
 USING (VALUES
     (1, 1, 2, 'Bed Klagan Dark Red', 'Handwoven T’nalak in dark red.', 'Queen Size', 'Available', 'images/bed_klagan_darkred.jpg'),
-    (1, 1, 2, 'Bed Duon Blata Dark Blue/Light Blue/Natural', 'Handwoven T’nalak in light and dark blue.', 'Queen Size', 'Available', 'images/bed_duon_blue.jpg'),
+    (1, 2, 2, 'Bed Duon Blata Dark Blue/Light Blue/Natural', 'Handwoven T’nalak in light and dark blue.', 'Queen Size', 'Available', 'images/bed_duon_blue.jpg'),
     (1, 2, 3, 'Handwoven Malong - Black and Gold', 'Traditional woven garment in black and gold.', 'Single Size', 'Available', 'images/malong_black_gold.jpg'),
-    (1, 2, 3, 'Handwoven Malong - Gold and Fuchsia', 'Traditional woven garment in gold and fuchsia.', 'Single Size', 'Available', 'images/malong_gold_fuchsia.jpg'),
+    (1, 3, 3, 'Handwoven Malong - Gold and Fuchsia', 'Traditional woven garment in gold and fuchsia.', 'Single Size', 'Available', 'images/malong_gold_fuchsia.jpg'),
     (1, 4, 4, 'Heritage Poncho', 'Cotton T’nalak poncho from Cotabato with traditional Filipino patterns.', 'Medium', 'Available', 'images/heritage_poncho.jpg')
 ) AS source (ArtisanID, PatternID, CategoryID, CraftName, CraftDesc, CraftDimension, [Status], Thumbnail)
 ON target.CraftName = source.CraftName
