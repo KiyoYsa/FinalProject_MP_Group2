@@ -70,23 +70,6 @@
 
         </div>
 
-        <!--
-        <div class="storiescard">
-            <img src="images/tbolis journey.webp" />
-
-            <h3>A T'boli Women's Journey</h3>
-
-            <p>
-            Before the sun rises, she is already on her way through mountains, rivers, and long lengths of road, carrying a small desire of education. 
-            Every step reveals a story of bravery, hope, and determination. Discover her strength behind her journey.
-            </p>
-
-            <a class="btn-read" href="https://sesotunawa.com/blogs/stories/a-tboli-womans-journey" target="_blank">
-            Read More
-            </a>
-
-        </div>
-        -->
     </div>
 
 </div>
@@ -102,6 +85,7 @@
               <div class="text">
                   <h3>The T'nalak Festival</h3>
                   <p>As the province's founding anniversary, this is the largest celebration in South Cotabato. It takes its name from the sacred cloth known as T'nalak, which is woven by T'boli "dream weavers" using their dreams as inspiration. The celebration represents the "interweaving" of the province's many cultures.</p>
+                   <h3>When: July 18</h3>
               </div>
               <p class="festival-date" data-type="fixed" data-date="07-18">
                 Countdown: <span class="countdown"></span>
@@ -115,7 +99,8 @@
         <div class ="text">
             <h3>The Helobung Festival</h3>
             <p>Held in the municipality of Lake Sebu, "Helubong" means "never-ending joy." It is a celebration of the T'boli people's cultural endurance and a magnificent thanksgiving for a good crop. It includes colorful street dance, ethnic music performed on the hegelung (lute), and traditional games like horse fighting (kadal kuda).</p>
-        </div>
+            <h3>When: November 9 - 11</h3>
+            </div>
         <p class="festival-date" data-type="fixed" data-date="11-09">
             Countdown: <span class="countdown"></span>
         </p>
@@ -130,7 +115,8 @@
         <div class="text">
             <h3>Seslong Festival</h3>
             <p> The word "Seslong" is derived from a T'boli phrase that means "to gather for bartering." It recreates the old custom of trading commodities between highland and lowland tribes. Through cultural parades, the "Miss T'boli" pageant, and exhibits of traditional crafts and brassware, it now highlights T'boli heritage.</p>
-        </div>
+            <h3>When: March 5 - 16</h3>
+            </div>
         <p class="festival-date" data-type="fixed" data-date="03-05">
             Countdown: <span class="countdown"></span>
         </p>
@@ -145,6 +131,7 @@
         <div class="text">
             <h3>Lemlunay Festival</h3>
             <p>"Lemlunay," also known as the T'boli Tribal Festival, is a mythical "Golden Age" or paradise with eternal peace. This is a very spiritual holiday that frequently begins with gongs and dawn ceremonies. It features large gatherings of different indigenous tribes at Lake Sebu and is a moment for the tribe to renew their vow to work toward that ideal state of life.</p>
+            <h3>When: Third week of September </h3>
         </div>
         
         <p class="festival-date" data-type="september-third-week">
